@@ -279,20 +279,57 @@
 
 }
 
-#iconCancelSearch{
-    position: absolute;
-    font-size: 38px;
-    left: 0;
-    opacity: 0;
-}
+
 .nav-icon-menu .icon-search{
     position: relative;
     overflow: hidden;
 }
-#iconSearch ::after{
+
+
+.icon-search::before{
+    content: "";
+    position: absolute;
+    display: inline-block;
+    height: 28px;
+    width: 15%;
+    left: 50%;
+    transform: rotate(-45deg) ;
+    opacity: 0;
+    background: #000000;
+    transition:  transform .8s ease 0s,opacity 0.8s ease 0s;
+    animation-fill-mode: forwards;
+    
+}
+
+.icon-search::after{
+    content: "";
+    position: absolute;
+    display: inline-block;
+    height: 28px;
+    width: 15%;
+    left: 50%;
+    transform:  rotate(45deg) ;
+    opacity: 0;
+    background: #000000;
+    transition:  transform .8s ease 0s,opacity 0.8s ease 0s;
+    
+   
+}
+
+.icon-search:active #iconSearch{
     opacity: 0;
 }
-.icon-search:hover #icon-search::after{
-    transition: all 1s;
+.icon-search:active::before{
+    opacity: 1;
+    transform: rotate(45deg) ;
+    
 }
+.icon-search:active::after{
+    opacity: 1;
+    transform: rotate(135deg) ;
+    
+}
+
+
+
 
