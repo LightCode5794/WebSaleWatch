@@ -26,6 +26,10 @@
     animation: animateleft 0.4s
 }
 
+.animate-hide-to-top{
+    animation: animateHideToTop 1s;
+     animation-fill-mode: forwards;
+}
 @keyframes animateleft {
     from {
         left: -300px;
@@ -38,7 +42,33 @@
     }
 }
 
-.sidebar .bar-item {
+@keyframes animateHideToTop {
+    from{
+       
+        top: 0;
+        
+    }
+    to{
+        top: -100%;
+        /* opacity: 0; */
+    }
+
+    
+}
+.content-sidebar{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    height: 100%;
+}
+
+.content-sidebar .bar-logo{
+    position: relative;
+    height: 68px;
+    display: flex;
+    align-items: center;
+}
+.content-sidebar .bar-item {
     padding: 8px 16px;
     /* float: left; */
     border: none;
@@ -145,6 +175,7 @@
 
 .menu-top-bar .sub-menu-top-bar {
     display: none;
+    z-index: 2;
 
 
 }
@@ -185,29 +216,83 @@
     }
 }
 
+
 /*  menu-header  */
 
 .container-menu-header {
     height: 84px;
     display: flex;
     align-items: center;
-
+    position: relative;
 
 }
 
 .icon-hamburger {
     font-size: 24px;
-    padding-left: 16px;
+    padding: 4px 16px 0px 16px;
     cursor: pointer;
+    /* font-family: Arial, Helvetica, sans-serif; */
+
 }
 
 .logo {
     display: flex;
-    height: 60%;
-    margin: auto;
+    height: 80%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    
 
 }
 
-.nav-main-menu {}
+.nav-main-menu {
+}
+.nav-main-menu a{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #000000;
+}
+.nav-main-menu li,
+.nav-icon-menu li
+{
+    display: inline-block;
+    padding: 0 16px;
+}
 
-.nav-icon-menu {}
+.nav-main-menu li:hover a,
+.nav-icon-menu li:hover i
+{
+    color: var(--color-text-hover);
+}
+.nav-icon-menu {
+    position: absolute;
+    cursor: pointer;
+    right: 16px;
+    
+}
+
+.nav-icon-menu .icon-search,
+.nav-icon-menu .icon-cart{
+    font-size: 24px;
+
+}
+
+#iconCancelSearch{
+    position: absolute;
+    font-size: 38px;
+    left: 0;
+    opacity: 0;
+}
+.nav-icon-menu .icon-search{
+    position: relative;
+    overflow: hidden;
+}
+#iconSearch ::after{
+    opacity: 0;
+}
+.icon-search:hover #icon-search::after{
+    transition: all 1s;
+}
+

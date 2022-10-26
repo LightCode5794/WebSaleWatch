@@ -15,25 +15,36 @@
 <body>
     <div class="main">
         <!-- Sidebar -->
-        <div class="sidebar bar-block animate-left" id="mySidebar">
-            <button class="bar-item bar-button xxlarge" onclick="closeSidebar()">Close &times;</button>
-            <a href="#" class="bar-item bar-button">Link 1</a>
-            <a href="#" class="bar-item bar-button">Link 2</a>
-            <a href="#" class="bar-item bar-button">Link 3</a>
+        <div class="sidebar animate-left" id="mySidebar">
+            <div class="content-sidebar">
+               
+                <div class="bar-logo">
+                    <a href="#" class="logo">
+                        <img src="images/LogoShopWatch.png" alt="IMG_LOGO">
+                    </a>
+                </div>
+                    <!-- logo -->
+                <div class="menu-sidebar">
+                    <button class="bar-item bar-button xxlarge" onclick="closeSidebar()">Close &times;</button>
+                    <a href="#" class="bar-item bar-button">Link 1</a>
+                    <a href="#" class="bar-item bar-button">Link 2</a>
+                    <a href="#" class="bar-item bar-button">Link 3</a>
+                </div>   
+              
+            </div>
+           
         </div>
 
-        
-        <!-- page content -->
+       <!-- overlay -->
         <div class="overlay" onclick="closeSidebar()" id="myOverlay"></div>
-
-        <header class="header">
+ <!-- page content -->
+        <header class="header" id="header">
             <!-- Header desktop -->
             <div class="container-menu-desktop">
                 <!-- Topbar -->
                 <div class="top-bar">
                     <div class="content-topbar">
                         <div class="left-top-bar">
-
                             <p><i class="fa-solid fa-phone"></i> 012343569 </p>
                         </div>
 
@@ -42,7 +53,7 @@
                             <!--  account -->
                             <div class="menu-top-bar account">
 
-                                <a href="#">My Account <i class="arrow-down-icon fa-solid fa-caret-down"></i> <i class="fa-solid fa-arrow-down"></i></a>
+                                <a href="#">My Account <i class="arrow-down-icon fa-solid fa-caret-down"></i></a>
                                 <ul class="sub-menu-top-bar">
                                     <li><a href="my-account.html">My Account </a> </li>
                                     <li><a href="login.html">Login</a></li>
@@ -73,31 +84,50 @@
                     </div>
                 </div>
             </div>
+            
             <!-- menu-header -->
             <nav class="container-menu-header">
                 <!-- icon open sidebar -->
                 <div class="icon-hamburger" onclick="openSidebar()"><i class="ti-menu"></i> </div>
-                  
+
                 <!-- logo -->
                 <a href="#" class="logo">
                     <img src="images/LogoShopWatch.png" alt="IMG_LOGO">
                 </a>
                 <!-- menu -->
                 <div class="nav-main-menu">
-
+                    <ul class="li">
+                        <li><a href="#">Watches</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Store Locator</a</li>
+                        <li><a href="#"></a></li>
+                    </ul>
+                   
                 </div>
                 <div class="nav-icon-menu">
+                    <ul class="li">
+                        <li>
+                            <div class="icon-search">
+                                <i class="fa-solid fa-magnifying-glass " id="iconSearch"></i>
+                                <i class="fa-solid fa-xmark" id="iconCancelSearch"></i>
+                             </div>
+                        </li>
+                        <li>
+                            <div class="icon-cart"><i class="fa-solid fa-cart-shopping"></i></div>
+                        </li>
 
+
+                    </ul>
                 </div>
             </nav>
-
-
         </header>
 
+        <!-- navigation -->
         <nav class="nav">
-
         </nav>
 
+        <!-- content -->
         <section class="content">
             <div class="slider">
 
