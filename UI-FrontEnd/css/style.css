@@ -1,0 +1,213 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-text-hover: #FF6C60;
+}
+
+/* side bar */
+.sidebar {
+    display: none;
+    height: 100%;
+    width: 40%;
+    background-color:#fff;
+    position: fixed;
+    /* fixed!important; */
+    overflow: auto;
+    z-index: 5;
+}
+
+/* animation for sidebar */
+.animate-left {
+    /* position: relative; */
+    animation: animateleft 0.4s
+}
+
+@keyframes animateleft {
+    from {
+        left: -300px;
+        opacity: 0
+    }
+
+    to {
+        left: 0;
+        opacity: 1
+    }
+}
+
+.sidebar .bar-item {
+    padding: 8px 16px;
+    /* float: left; */
+    border: none;
+    display: block;
+    outline: 0
+}
+
+.bar-button {
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    cursor: pointer;
+    white-space: nowrap;
+    width: 100%;
+    text-align: left;
+
+}
+
+.bar-button:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    /* background: red; */
+}
+
+.overlay {
+    cursor: pointer;
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2
+}
+
+
+/* header */
+
+/* plus menu with desktop */
+.container-menu-desktop .top-bar {
+    background-color: #222222;
+    color: #666666;
+}
+
+
+.content-topbar {
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    align-items: center;
+    line-height: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+.content-topbar ul {
+    background: #ffffff none repeat scroll 0 0;
+    border: 1px solid #ededed;
+    padding: 12px;
+    position: absolute;
+    list-style-type: none;
+    top: 100%;
+    left: 0%;
+    min-width: 120px;
+
+}
+
+.content-topbar a {
+    text-decoration: none;
+    color: #666666;
+
+}
+
+.left-top-bar {
+    padding-left: 16px;
+}
+
+.right-top-bar {}
+
+.right-top-bar>a {
+    text-decoration: none;
+    padding: 0 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 1.8;
+    height: 100%;
+    color: #b2b2b2;
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.menu-top-bar {
+    position: relative;
+    display: inline-block;
+    padding: 0 16px;
+}
+
+.menu-top-bar .sub-menu-top-bar {
+    display: none;
+
+
+}
+
+.menu-top-bar:hover>a {
+    color: var(--color-text-hover);
+
+
+}
+
+.menu-top-bar:hover .sub-menu-top-bar {
+    display: block;
+
+}
+
+.sub-menu-top-bar a:hover {
+    display: block;
+    color: var(--color-text-hover);
+    ;
+
+}
+
+.sub-menu-top-bar li {
+    border-bottom: 1px solid #eeeeee;
+    line-height: 18px;
+    padding: 12px 0;
+
+}
+
+.menu-top-bar.currentcy .sub-menu-top-bar {
+    transform: translateX(-50%);
+}
+
+/* responsive for top-bar */
+@media screen and (max-width: 600px) {
+    .top-bar {
+        display: none;
+    }
+}
+
+/*  menu-header  */
+
+.container-menu-header {
+    height: 84px;
+    display: flex;
+    align-items: center;
+
+
+}
+
+.icon-hamburger {
+    font-size: 24px;
+    padding-left: 16px;
+    cursor: pointer;
+}
+
+.logo {
+    display: flex;
+    height: 60%;
+    margin: auto;
+
+}
+
+.nav-main-menu {}
+
+.nav-icon-menu {}
