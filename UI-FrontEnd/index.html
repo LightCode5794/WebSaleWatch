@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="../assets/themify-icons/themify-icons.css">
-    <script src="js/index.js"></script>
+    
     <title>Document</title>
 </head>
 
@@ -108,9 +108,21 @@
                 <div class="nav-icon-menu">
                     <ul >
                         <li>
-                            <span class="icon-search">
-                                <i class="fa-solid fa-magnifying-glass " id="iconSearch"></i>
-                            </span>
+                                
+                            <div  class="search__toggle">
+                                <span class="icon-cancel-search" >
+                                    
+                                </span>
+                                <i class="fa-solid fa-magnifying-glass " id = "icon_search" ></i>
+                                
+                               
+                              
+                            </div>
+                            
+                             <!-- <button class="hamburger__toggle">
+                                <span class="hamburger__icon"></span>
+                                </button>  -->
+                           
                         </li>
                         <li>
                             <div class="icon-cart"><i class="fa-solid fa-cart-shopping"></i></div>
@@ -138,7 +150,12 @@
         </footer>
 
     </div>
-
+<!-- 
+    <script>
+        let button = document.querySelector(".hamburger__toggle");
+        button.addEventListener( "click", () => button.classList.toggle("toggled") );
+    </script> -->
+    <script src="js/index.js"></script>
 </body>
 
 </html>

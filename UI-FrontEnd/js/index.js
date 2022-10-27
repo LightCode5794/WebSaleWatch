@@ -19,6 +19,17 @@ function closeSidebar() {
   var header = document.getElementById("header");
   if(header.className === "header animate-hide-to-top"){
     header.className = "header";
-    
   }
 }
+
+
+  let iconSearch = document.querySelector(".search__toggle");
+  iconSearch.addEventListener( "click", () => iconSearch.classList.toggle("toggled") )
+
+
+  // let button = document.querySelector(".hamburger__toggle");
+  // button.addEventListener( "click", () => button.classList.toggle("toggled") );
+
+
+
+
