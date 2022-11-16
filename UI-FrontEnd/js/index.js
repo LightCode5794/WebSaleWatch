@@ -36,18 +36,18 @@ function closeSidebar() {
   var header = document.getElementById("header");
 
   // disapear the sidebar
-  var mySidebar = document.getElementById("mySidebar");
-  mySidebar.animate(
-    {
-      left: '-40%',
-      opacity: 0,
-      // transform: 'translateX(-100%)',
-    },
+  // var mySidebar = document.getElementById("mySidebar");
+  // mySidebar.animate(
+  //   {
+  //     left: '-40%',
+  //     opacity: 0,
+  //     // transform: 'translateX(-100%)',
+  //   },
 
-    {
-      duration: 300,
-      fill: 'forwards'
-    })
+  //   {
+  //     duration: 300,
+  //     fill: 'forwards'
+  //   })
   
   // re-appear the sidebar
   header.animate({
