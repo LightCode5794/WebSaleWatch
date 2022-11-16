@@ -36,18 +36,18 @@ function closeSidebar() {
   var header = document.getElementById("header");
 
   // disapear the sidebar
-  // var mySidebar = document.getElementById("mySidebar");
-  // mySidebar.animate(
-  //   {
-  //     left: '-40%',
-  //     opacity: 0,
-  //     // transform: 'translateX(-100%)',
-  //   },
+  var mySidebar = document.getElementById("mySidebar");
+  mySidebar.animate(
+    {
+      left: '-40%',
+      opacity: 0,
+      // transform: 'translateX(-100%)',
+    },
 
-  //   {
-  //     duration: 300,
-  //     fill: 'forwards'
-  //   })
+    {
+      duration: 300,
+      fill: 'forwards'
+    })
   
   // re-appear the sidebar
   header.animate({
@@ -60,13 +60,29 @@ function closeSidebar() {
     })
 }
 
-
-
+// toggle for search button
 let iconSearch = document.querySelector(".search__toggle");
 iconSearch.addEventListener("click", () => iconSearch.classList.toggle("toggled"))
 
+let slideIndex = 0;
+showSlides();
 
-
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 10000); // Change image every 2 seconds
+}
 
 
 

@@ -27,43 +27,44 @@
                     <!-- <button class="bar-item bar-button xxlarge" onclick="closeSidebar()">Close &times;</button> -->
                     <div class="search-button-group">
                         <i class="fa-solid fa-magnifying-glass " id="icon_search"></i>
-                        <input type="search"  class="search-field" placeholder="Search watches…" value="" name="s" autocomplete="off">
+                        <input type="search" class="search-field" placeholder="Search watches…" value="" name="s"
+                            autocomplete="off">
                     </div>
                     <a href="#" class="bar-item bar-button">Home</a>
                     <a href="#" class="bar-item bar-button">Watches</a>
                     <a href="#" class="bar-item bar-button">About</a>
                     <a href="#" class="bar-item bar-button">Blog</a>
-                    <a href="#" class="bar-item bar-button">Contact</a>                   
+                    <a href="#" class="bar-item bar-button">Contact</a>
                 </div>
-               
+
                 <div class="bottom-extras">
                     <div class="menu-divider"></div>
                     <div class="account-menu">
-                       
-                            <a href="#" class="">Login</a>
-                            <i class="ti-user"></i>                           
-                     
+
+                        <a href="#" class="">Login</a>
+                        <i class="ti-user"></i>
+
                     </div>
                     <div class="menu-divider"></div>
                     <div class="cart-menu">
-                       
-                            <a href="#" class="">Cart</a>
-                            <i class="ti-shopping-cart"></i>                           
-                       
+
+                        <a href="#" class="">Cart</a>
+                        <i class="ti-shopping-cart"></i>
+
                     </div>
                     <div class="menu-divider"></div>
                     <div class="language-menu">
-                       
-                            <a href="#" class="">Language</a>
-                            <i class="ti-angle-down"></i>                           
-                        
+
+                        <a href="#" class="">Language</a>
+                        <label class="language-selected">English</label>
+                        <i class="ti-angle-down"></i>
+                        <ul class="language-sub-menu">
+                            <li><a href="#">English</a> </li>
+                            <li><a href="#">Tiếng Việt</a></li>
+                        </ul>
+
                     </div>
                 </div>
-
-              
-
-                
-
             </div>
 
         </div>
@@ -152,14 +153,14 @@
                                     <!-- <button class="hamburger__toggle">
                                 <span class="hamburger__icon"></span>
                                 </button>  -->
-                                  <!-- icon open sidebar -->
+                                    <!-- icon open sidebar -->
                                 </li>
                                 <li class="icon-cart">
-                                    <div ><i class="fa-solid fa-cart-shopping"></i></div>
+                                    <div><i class="fa-solid fa-cart-shopping"></i></div>
                                 </li>
-                                
+
                                 <li class="icon-hamburger">
-                                 <div  onclick="openSidebar()"><i class="ti-menu"></i> </div>
+                                    <div onclick="openSidebar()"><i class="ti-menu"></i> </div>
                                 </li>
 
                             </ul>
@@ -180,7 +181,33 @@
 
         <!-- content -->
         <section class="content">
-            <div class="slider">
+            <div id="slider">
+                <div class="slideshow-container">
+
+                    <div class="mySlides fade" style="background-image: url('../assets/images/slider/slider1.jpg');">
+                        <div class="numbertext">1 / 3</div>
+                        <!-- <img src="../assets/images/slider/Slider2.jpg" style="width:50%;"> -->
+                        <div class="text">Caption Text</div>
+                    </div>
+
+                    <div class="mySlides fade" style="background-image: url('../assets/images/slider/slider2.jpg') ;">
+                        <div class="numbertext">2 / 3</div>
+                        <!-- <img src="../assets/images/slider/Slider3.jpg" style="width:50%; "> -->
+                        <div class="text">Caption Two</div>
+                    </div>
+
+                    <div class="mySlides fade" style="background-image: url('../assets/images/slider/slider3.jpg');">
+                        <div class="numbertext">3 / 3</div>
+                        <!-- <img src="../assets/images/slider/Slider4.jpg" style="width:50%; "> -->
+                        <div class="text">Caption Three</div>
+                    </div>
+
+                    <div class="dot-group">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </div>
+                </div>
 
             </div>
         </section>
