@@ -449,7 +449,7 @@ img {
 .slideshow-container .slick-prev::before, 
 .slideshow-container .slick-next::before{
     font-size: 40px;
-    display: none;
+    opacity: 0;
     
 }
 .slideshow-container .slick-prev, 
@@ -458,28 +458,48 @@ img {
     width: 100px;
     height: 100px;
     z-index: 10;
-    display: none;
+   opacity: 0;
    
+}
+
+.slideshow-container .slick-prev{   
+    
+    left: 0px;
+    
+ }
+ .slideshow-container .slick-next{
+     right: 0px;
+     
 }
 
 .slideshow-container:hover .slick-prev,
 .slideshow-container:hover .slick-prev::before{
-    display: block;
+   
     animation-name: slick-prev-anime;
     animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    
+    
 }
 .slideshow-container:hover .slick-next,
 .slideshow-container:hover .slick-next::before{
-    display: block;
+   
     animation-name: slick-next-anime;
     animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+   
+    
 }
+
+
 
 @keyframes slick-prev-anime {
     from{
+        opacity: 0;
         left: 0;
     }
     to{
+        opacity: 1;
         left: 36px;
     }
 }
@@ -487,19 +507,16 @@ img {
 
 @keyframes slick-next-anime {
     from{
+        opacity: 0;
         right: 0;
     }
     to{
+        opacity: 1;
         right: 36px;
     }
 }
 
-.slideshow-container .slick-prev{   
-   left: 36px;
-}
-.slideshow-container .slick-next{
-    right: 36px;
- }
+
 
 
  .slideshow-container .slick-dots{

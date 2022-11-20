@@ -89,6 +89,9 @@ $(document).ready(function(){
   $('.slideshow-container').slick({
     dots:true,    
     cssEase: 'linear',
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 5000,
   });
 
 });
