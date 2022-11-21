@@ -737,24 +737,14 @@ img {
 .content-containter{
     margin-top: 24px;
 }
-.product-new {
-
-    min-height: 574px;
-    display: flex;
-    margin: auto;
-
-}
-
 .carousel {
-    /* background: #EEE; */
+  
     width: 100%;
-    /* height: fit-content; */
 }
 
 .carousel-cell {    
     width: 100%;
     margin-right: 10px;
-    /* background: #8C8; */
     border-radius: 5px;
     counter-increment: gallery-cell;
 }
@@ -802,36 +792,67 @@ img {
     opacity: 1;
 }
 
-/* hide disabled button */
+/* hide disabled button
 .flickity-button:disabled {
     display: none;
+} */
+
+.testimonial-container{
+    background-color: #f1e8df;
+   width: 100%;
+   height: 100%;
+   padding: 60px 0;
 }
 
-.wrapper{
-    width:100%;
-    padding-top: 20px;
-    text-align:center;
-  }
-  h2{
-    font-family:sans-serif;
-  }
-  .carousel{
-    width:90%;
-    margin:0px auto;
-  }
-  .slick-slide{
-    margin:10px;
-  }
-  .slick-slide img{
-    width:100%;
-    border: 2px solid #fff;
-  }
-  .wrapper .slick-dots li button:before {
-    font-size:20px;
-    /* color:red; */
-  } 
-  .slick-prev:before, .slick-next:before {
-    font-family: "Glyphicons Halflings", "slick", sans-serif;
-    font-size: 40px;
+.testimonial-container .carousel{
+    width: 60%;
+    margin: auto;
+}
+.testimonial-container .content-title{
+    margin-bottom: 48px;
+}
+.testimonial-container .flickity-page-dots{
+    position:unset  ;
+}
+.testimonial-cell{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    /*  counter-increment: gallery-cell; */
+}
+
+.testimonial-cell .testiomotinal-caption{
+    text-align: center;
+    padding: 16px 30px;
+    margin-bottom: 16px;
+    font-family: var(--font-web);
+}
+
+
+.testimonial-cell .infor-customer{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.infor-customer img{
+    max-width: 100px;
+    max-height: 100px;
+   border-radius: 50%;
+}
+.infor-customer .infor-text{
+    margin: auto 16px;
+}
+
+
+.infor-text p, 
+.infor-text h2
+{
+    font-family: var(--font-web);
+}
+
+.infor-text p{
+    font-style: italic ;
 }
 

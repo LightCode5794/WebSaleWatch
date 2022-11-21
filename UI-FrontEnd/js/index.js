@@ -88,7 +88,7 @@ iconSearch.addEventListener("click", () => iconSearch.classList.toggle("toggled"
 $(document).ready(function(){
   $('.slideshow-container').slick({
     dots:true,    
-    cssEase: 'linear',
+    cssEase: 'ease-in',
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 5000,
