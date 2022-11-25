@@ -1,0 +1,27 @@
+.content-footer{
+    background-color: #111111;
+    padding: 80px 0 0 0 ;
+}
+.content-footer .widget-list{
+    display: flex;
+    justify-content: space-around;
+    color: #ffffff;
+    padding-bottom: 60px;
+}
+
+.widget-list .widget{
+    line-height: 1.6;
+    padding: 16px ;
+}
+.widget .widget-content li{
+    display: inline-block;
+    padding: 16px;
+    font-size: 24px;
+}
+ .copyright{
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #fff;
+    text-align: center;
+    padding: 40px 0 ;
+}
+

@@ -1,0 +1,31 @@
+ 
+ /* animate for hover an link */
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 4px;
+  }
+  
+  .hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0px;
+    left: 0;
+    background-color: var(--color-text-hover);
+    transform-origin: bottom left;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .hover-underline-animation:hover::after {
+    transform: scaleX(1);
+  }
