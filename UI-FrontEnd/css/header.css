@@ -21,9 +21,23 @@ a {
 }
 
 
+/* intilizie  */
+
+dl, ol, ul {
+   margin: 0;
+}
+ol, ul {
+  padding: 0;
+}
+
+.container-menu-desktop{
+    border-bottom: 1px solid #ddd;
+}
+
 .container-menu-desktop .top-bar {
     background-color: #222222;
     color: #666666;
+  
 }
 
 
