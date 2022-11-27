@@ -23,10 +23,10 @@ a {
 
 /* intilizie  */
 
-dl, ol, ul {
+dl, ol, ul,p {
    margin: 0;
 }
-ol, ul {
+ol, ul,p {
   padding: 0;
 }
 

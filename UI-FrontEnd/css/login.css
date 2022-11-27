@@ -41,7 +41,7 @@ html, body{
 
 .link-content {
     color: #0d6efd;
-    text-decoration: underline;
+    /* text-decoration: underline; */
 }
 .link-content:hover{
     color: #0a58ca;;
@@ -68,6 +68,17 @@ html, body{
     padding: 12px 28px;
     text-size-adjust: inherit;
 }
+
+
+.register {
+    text-align: center;
+}
+/* .register a{
+    color: #0d6efd;
+}
+.register a:hover{
+    color: #0a58ca;;
+} */
 /* .btn-login{
     margin-top: 4px;
     width: 100%;
