@@ -140,33 +140,22 @@
 
 
 .search-product{
-    border: 1px solid #e6e6e6;
+   
     border-radius: 2px;
+    border-color: #e6e6e6;
     width: 100%;
     margin: 16px 0;
-    display: none;
-    position: relative;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.3s;   
 }
 
 .search-product.show-search{
-   
-    animation-name: animateSearchProduct;
-    animation-duration: 0.3s;
-    animation-fill-mode: forwards;
-    display: block;
-}
-
-@keyframes animateSearchProduct {
-    from{
-        height: 0;
-    }
-    to {
-        height: 52px;
-    }
+    height: 52px;
+    border: 1px solid #e6e6e6;
 }
 
 .search-button-group {
-    position: relative;
     display: flex;
     align-items: center;
     padding-left: 16px;
@@ -185,7 +174,12 @@
     font-size: 16px;
 }
 
+
+
+
 .product-content {
     min-height: 300px;
     background-color: royalblue;
+    /* margin-top: 52px; */
 }
+
