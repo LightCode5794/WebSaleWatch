@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"> </script>
+    <link rel="stylesheet" href="css/watches.css">
+    
+    <title>Shop</title>
+</head>
+
+<body>
+
+    <header id="header">
+        <script>
+            $(function () {
+                $("#header").load("./layouts/header.html");
+            });
+        </script>
+    </header>
+
+    <!-- products -->
+    <div class="container">
+        <div class="product-container">
+
+            <!-- filter group -->
+            <div class="product-filter">
+                <div class="filter-text">
+
+                    <button class="btn hover-underline-animation" data-filter="*">
+                        All Watches
+                    </button>
+
+                    <button class="btn hover-underline-animation" data-filter=".women">
+                        Women
+                    </button>
+
+                    <button class="btn hover-underline-animation" data-filter=".men">
+                        Men
+                    </button>
+
+                    <button class="btn hover-underline-animation" data-filter=".limited">
+                        Limited Edition
+                    </button>
+
+                </div>
+                <div class="filter-icon">
+                    <div class="btn-search">
+                        <i class="ti-search"></i>
+                        <i class="ti-close"></i>
+                        Search
+                    </div>
+                </div>
+            </div>
+            <!-- search product -->
+            <div class="search-product">
+                <div class="search-button-group">
+                    <i class="ti-search" id="icon_search"></i>
+                    <input type="search" class="search-field" placeholder="Search watches…" value="" name=""
+                        autocomplete="off">
+                </div>
+            </div>
+            <div class="product-content">
+                <i></i>
+            </div>
+        </div>
+        
+    </div>
+    <footer id="footer">
+
+        <script>
+            $(function () {
+                $("#footer").load("./layouts/footer.html");
+            });
+        </script>
+
+    </footer>
+    <script src="js/watches.js"></script>
+</body>
+
+</html>
