@@ -15,6 +15,7 @@
 
 
 .container{
+    margin-top: 52px;
     margin-right: auto;
     margin-left: auto;
     padding-right: 15px;
@@ -23,10 +24,18 @@
 }
 /* responsive container */
 
+
+@media (max-width: 1200px) {
+    .product-content{
+        justify-content: center;
+    }
+   
+}
 @media (min-width: 576px) {
     .container {
         max-width: 540px;
     }
+  
 }
 
 @media (min-width: 768px) {
@@ -59,13 +68,13 @@
 }
 
 
-.filter-text{
+#filter-btns-text{
     display: flex;
     justify-content: space-around;
     margin: 10px;
 }
 
-.filter-text .btn{
+#filter-btns-text .btn{
     margin: 4px 32px 4px 0;
     border: none;
     background: transparent;
@@ -73,20 +82,18 @@
     color: #888888;
     font-size: 16px;
 }
+
+
+#filter-btns-text .active, 
 .btn:hover{
     color: #000000;
 }
 
-.btn:focus{
-    color: #000000;
-}
 
-.btn:focus.hover-underline-animation::after{
+.active.hover-underline-animation::after{
     transform: scaleX(1);
 }
-.filter-icon{
-    /* display: flex; */
-}
+
 
 .btn-search{
     border: 1px solid #e6e6e6;
@@ -159,7 +166,6 @@
     display: flex;
     align-items: center;
     padding-left: 16px;
-    /* border-bottom: 2px solid currentColor; */
 }
 
 
@@ -178,8 +184,72 @@
 
 
 .product-content {
-    min-height: 300px;
-    background-color: royalblue;
-    /* margin-top: 52px; */
+    /* min-height: 300px; */
+    display: flex;
+    flex-wrap: wrap;
+    margin-left:  -5px;
+    margin-right:  -5px;
+    
 }
 
+
+.product-box{
+     padding: 0 5px 36px;
+    width: 280px;
+    /* width: 25%; */
+    display: none;
+}
+
+.show-product{
+    display: block;
+}
+.product-box .box-image {
+    display: inline-block;
+    width: 100%;
+    overflow: hidden;
+}
+
+.box-image .product-box-image {
+    display: block;
+    max-height: 100%;
+    max-width: 100%;
+    transition: all 0.4s;
+     
+}
+.product-box-image:hover{
+  
+    transform: scale(1.05);
+}
+
+.product-box p, 
+.product-box a{
+    line-height: 1.6;
+}
+
+.product-box .product-name{
+    font-size: 16px;
+    color: #999;
+}
+
+.load-more{
+    cursor: pointer;
+    margin: auto;
+    width: 150px;
+    border: 2px solid #000000;
+    text-align: center;
+    padding: 16px;
+    /* background-color: #888888; */
+    border-radius: 32px;
+    transition: all 0.3s;
+}
+.load-more .load-text{
+    /* color: #000000; */
+    color: #000000;
+
+}
+.load-more:hover{
+    background-color: #000000;
+}
+.load-more:hover .load-text{
+    color: #ffffff;
+}
