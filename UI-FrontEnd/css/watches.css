@@ -85,7 +85,7 @@
 
 
 #filter-btns-text .active, 
-.btn:hover{
+#filter-btns-text .btn:hover{
     color: #000000;
 }
 
@@ -197,11 +197,11 @@
      padding: 0 5px 36px;
     width: 280px;
     /* width: 25%; */
-    display: none;
+    /* display: none; */
 }
 
 .show-product{
-    display: block;
+    /* display: block; */
 }
 .product-box .box-image {
     display: inline-block;
