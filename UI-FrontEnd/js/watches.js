@@ -5,8 +5,9 @@ let searchProductDiv = document.querySelector(".search-product");
 btnSearch.addEventListener("click", () => {
     btnSearch.classList.toggle("show-search");
     searchProductDiv.classList.toggle("show-search");
-
+  
 })
+
 
 
 
@@ -15,6 +16,10 @@ var $grid = $('.product-content').isotope({
     itemSelector: '.product-box',
     layoutMode: 'fitRows',
     filter: '*',
+    masonry: {
+        // use element for option
+        columnWidth: '.grid-sizer'
+      }
 });
 
 // filter for watches grid
