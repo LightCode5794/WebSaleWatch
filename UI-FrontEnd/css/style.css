@@ -478,6 +478,7 @@ img {
 
 .content-title p {
     font-family: var(--font-web);
+    text-align: center;
     color: #797979;
 }
 
@@ -573,9 +574,17 @@ img {
     padding: 60px 0;
 }
 
-.testimonial-container .carousel {
-    width: 60%;
+ .testimonial-container .carousel {
+    width: 100%;
     margin: auto;
+} 
+
+@media (min-width: 992px) {
+    .testimonial-container .carousel {
+        width: 60%;
+        margin: auto;
+    } 
+
 }
 
 .testimonial-container .content-title {
