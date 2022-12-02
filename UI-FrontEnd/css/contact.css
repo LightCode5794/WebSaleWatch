@@ -13,22 +13,44 @@
 }
 
 
-.contact-container{
+.page-title {
+    width: 100%;
+    padding: 92px 16px;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: .85;
+    text-align: center;
+}
+
+.page-title h2 {
+    color: #fff;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.contact-container {
     margin: 62px 0;
     display: flex;
-    
+    flex-wrap: wrap;
 }
 
-.message-frm{
-    padding: 40px 80px;
+.message-frm,
+.contact-info {
+    border: 1px solid #ddd;
+    width: 50%;
 }
 
-.message-frm .title{
+
+.message-frm {
+    padding: 40px 60px;
+}
+
+.message-frm .title {
     text-align: center;
- margin-bottom: 28px;
+    margin-bottom: 28px;
 }
 
-.form-floating{
+.form-floating {
     padding-bottom: 8px;
 }
 
@@ -36,24 +58,20 @@
     color: #0d6efd;
     /* text-decoration: underline; */
 }
-.link-content:hover{
-    color: #0a58ca;;
+
+.link-content:hover {
+    color: #0a58ca;
+    ;
 }
-.question-group{
+
+.question-group {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
-.question-group .rememberme{
-    display: flex;
-    justify-content: space-around;
-}
-.rememberme input{
-    margin-right: 8px;
-}
 
-.btn{
+.btn {
     width: 100%;
     margin-top: 4px;
     width: 100%;
@@ -62,13 +80,56 @@
 }
 
 
-.register {
-    text-align: center;
-}
-
 .contact-info {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    padding-left: 60px;
+
+}
+
+
+
+.info {
+    display: flex;
+    padding: 40px 20px;
+   
+
+}
+
+.info-icon {
+    font-size: 20px;
+    padding: 0 16px;
+}
+
+
+@media (max-width: 991px) {
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .message-frm,
+    .contact-info {
+        width: 100%;
+    }
+
+}
+@media (max-width: 280px) {
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .message-frm{
+        padding: 60px 10px;
+    }
+    .contact-info {
+        padding: 0;
+    }
+
+}
+
+
+.map-contaier .map {
+    width: 100%;
+    display: inherit;
 }
