@@ -1,20 +1,6 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-}
 
-:root {
-    --color-text-hover: #FF6C60;
-    --font-web: Arial, Helvetica, sans-serif;
-    --font-size-title: 36px;
-    --font-weight-title: 500;
-}
 
-html, body{
-    font-family: var(--font-web);
-}
+
 a {
     text-decoration: none;
     cursor: pointer;

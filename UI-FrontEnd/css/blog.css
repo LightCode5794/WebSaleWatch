@@ -1,0 +1,62 @@
+
+
+.page-title {
+    width: 100%;
+    padding: 92px 16px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: .85;
+    text-align: center;
+}
+
+.page-title h2 {
+    color: #fff;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.page-content{
+    min-height: 500px;
+    padding: 64px 60px;
+}
+.hov-img{
+    display: block; 
+    overflow: hidden;
+    position: relative;
+}
+
+.hov-img img{
+    width: 100%;
+    transition: all .8s;
+}
+.hov-img:hover img{
+    transform: scale(1.04);
+}
+
+.time-post{
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    width: 70px;
+    min-height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255,255,255,0.9);
+}
+
+.time-post span{
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 1.1;
+    color: #333;
+}
+.time-post p{
+    font-size: 12px;
+    color: #333;
+    text-align: center;
+}
+
+

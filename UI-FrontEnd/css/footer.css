@@ -1,11 +1,11 @@
 
-a {
+.content-footer a {
     text-decoration: none;
     cursor: pointer;
     color: #ffffff;
 }
 
-a:hover{
+.content-footer a:hover{
     color: #ffffff;
 }
 
