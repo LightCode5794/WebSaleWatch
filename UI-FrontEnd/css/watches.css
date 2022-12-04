@@ -86,6 +86,7 @@
     cursor: pointer;
     color: #888888;
     font-size: 16px;
+    padding-bottom: 2px;
 }
 
 
@@ -212,6 +213,7 @@
     display: inline-block;
     width: 100%;
     overflow: hidden;
+    position: relative;
 }
 
 .box-image .quick-view {
