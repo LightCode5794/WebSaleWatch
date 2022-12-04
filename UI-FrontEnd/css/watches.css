@@ -44,10 +44,6 @@
         max-width: 960px;
     }
 
-    .product-box {
-        width: 50%;
-    }
-
     .grid-sizer {
         width: 33.3333%;
     }
@@ -71,6 +67,7 @@
 .product-filter {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 
 }
 
@@ -79,6 +76,7 @@
     display: flex;
     justify-content: space-between;
     margin: 10px;
+    gap: 10px;
 }
 
 #filter-btns-text .btn {
@@ -193,12 +191,8 @@
 
 .product-content {
     /* min-height: 300px; */
-    display: flex;
-    flex-wrap: wrap;
     margin-left: -5px;
     margin-right: -5px;
-    justify-content: space-evenly;
-
 }
 
 
@@ -208,6 +202,9 @@
     /* position: absolute; */
     /* max-width: 25%;  */
     /* display: none; */
+    /* width: 10%; */
+   
+
 
 }
 
@@ -215,7 +212,6 @@
     display: inline-block;
     width: 100%;
     overflow: hidden;
-    position: relative;
 }
 
 .box-image .quick-view {

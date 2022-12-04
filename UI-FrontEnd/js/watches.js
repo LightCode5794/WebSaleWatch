@@ -9,22 +9,22 @@ btnSearch.addEventListener("click", () => {
 })
 
 
-
-
 // init Isotope
-var $grid = $('.product-content').isotope({
-    itemSelector: '.product-box',
-    layoutMode: 'fitRows',
-    filter: '*',
-    masonry: {
-        // use element for option
-        columnWidth: '.grid-sizer'
-      }
-});
+$(window).on('load', function () {
+     $grid = 
+        $('.product-content').isotope({
+            itemSelector: '.product-box',
+            layoutMode: 'fitRows',
+            percentPosition: true,
+            animationEngine : 'best-available',
+            masonry: {
+                columnWidth: '.grid-sizer'
+            }
+        });
+    });
 
 // filter for watches grid
 
-filterSelection("*")
 function filterSelection(filterClass) {
     //   var x, i;
     //   x = document.getElementsByClassName("product-box");
