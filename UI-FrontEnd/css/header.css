@@ -33,7 +33,7 @@ ol, ul,p {
     height: 40px;
     align-items: center;
     line-height: 40px;
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: var(--font-web) */
 
 }
 
@@ -65,7 +65,7 @@ ol, ul,p {
 .right-top-bar>a {
     text-decoration: none;
     padding: 0 24px;
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
     font-size: 14px;
     line-height: 1.8;
     height: 100%;
@@ -150,7 +150,7 @@ ol, ul,p {
 
 .nav-main-menu a {
     text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
     font-size: 18px;
     line-height: 1.8;
     color: #000000;
