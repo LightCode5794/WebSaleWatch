@@ -1,30 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
-    <!--css bootstrap5 -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <!-- custom css for this dashboard -->
-    <link rel="stylesheet" href="../css/dashboard.css">
-    <link rel="stylesheet" href="../../assets/themify-icons/themify-icons.css">
-     <!-- general css -->
-     <link rel="stylesheet" href="../css/general-style.css">
-
-    <!-- font-awesome cdn -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/fontawesome.min.css">
-    
-    <title>Dashboard</title>
-</head>
-
-<body>
-    <my-sidebar></my-sidebar>
-    <!-- <section id="sidebar">
+// create sidebar
+class MySidebar extends HTMLElement {
+    connectedCallback() {
+        this.innerHTML = `
+        <section id="sidebar">
         <div>
             <div id="sidebar-container" class=" sidebar-container d-flex p-3 flex-column flex-shrink-0  bg-light">
                 <div
@@ -133,40 +111,43 @@
                 </div>
             </div>
         </div>
-    </section> -->
+    </section>
+   `
+    }
+}
+customElements.define('my-sidebar', MySidebar);
 
+//create header
+class MyHeader extends HTMLElement {
+    connectedCallback() {
+        this.innerHTML = `   
+        <header id="header">
+        <div class="header-container border-bottom shadow">
+            <button class="menu-btn btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="search-conatiner">
 
-
-    <section id="content-page">
-        <!-- <header id="header">
-            <div class="header-container border-bottom shadow">
-                <button class="menu-btn btn">
-                    <i class="fas fa-bars"></i>
+                <button class="btn-search">
+                    <i class="ti-search" id="icon_search"></i>
                 </button>
-                <div class="search-conatiner">
-
-                    <button class="btn-search">
-                        <i class="ti-search" id="icon_search"></i>
-                    </button>
-                    <input type="search" class="search-field" placeholder="Search blogs…" value="" name=""
-                        autocomplete="off">
-                </div>
-                <div class="header__permission">Admin</div>
+                <input type="search" class="search-field" placeholder="Search blogs…" value="" name=""
+                    autocomplete="off">
             </div>
-        </header> -->
-        <my-header></my-header>
+            <div class="header__permission">Admin</div>
+        </div>
+    </header>
+   `
+    }
+}
+customElements.define('my-header', MyHeader);
 
-        <section id="main-view">
-            <div class="container">
-                <div class="row">
-                    
-                </div>
-            </div>
-        </section>
-        
-        <my-footer></my-footer>
-        <!-- <footer id="footer">
-            <div class="footer-container border-top d-flex justify-content-between align-items-center">
+//create header
+class MyFooter extends HTMLElement {
+    connectedCallback() {
+        this.innerHTML = `
+        <footer id="footer">
+            <div class="footer-container border-top d-flex justify-content-between align-items-center ">
 
                 <span class="copyright p-3 fw-light" style="font-size: 13px;">
                     Copyright <i class="fa-regular fa-copyright"></i> Team 5 - Web Watch Clinic 2022
@@ -176,21 +157,49 @@
                     Made with <i class="ti-heart"></i> by Tran Trong
                     Hoang and Bui Le Hoai An
                 </span>
-
-
             </div>
-        </footer> -->
-    </section>
+        </footer>
+      `
+    }
+}
+customElements.define('my-footer', MyFooter);
 
-    <!-- js for boostrap5 -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-        <!-- js for side bar -->
-        <script src="../js/general-template.js"></script>
-        <!-- js for this page -->
-    <script src="../js/doashboard.js"></script>
 
-</body>
+// event for sidebar
+let menuBtn = document.querySelector(".menu-btn");
+var sidebar = document.getElementById("sidebar-container");
+var contentPage = document.getElementById("content-page");
+var widthSidebar = getComputedStyle(document.documentElement).getPropertyValue('--width-sidebar');
+let btnCloseSidebar = document.querySelector(".btn-close-sidebar");
 
-</html>
+menuBtn.addEventListener("click", () => {
+
+    //open sidebar
+    if (sidebar.offsetLeft < 0) {
+       openSidebar();
+
+    }
+    //close sidebar
+    else {
+       closeSidebar();
+    }
+})
+
+btnCloseSidebar.addEventListener("click", () => {
+    // close sidebar
+    closeSidebar();
+})
+
+function openSidebar(){
+    sidebar.style.left = '0';
+    console.log(screen.width)
+    if (screen.width > 992) {
+        contentPage.style.marginLeft = widthSidebar;
+    }
+
+}
+function closeSidebar(){
+    sidebar.style.left = ('-' + widthSidebar).replace(/\s/g, '');
+    contentPage.style.marginLeft = '0';
+}
+
