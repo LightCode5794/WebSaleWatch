@@ -5,20 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
+
     <!--css bootstrap5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- custom css for this dashboard -->
     <link rel="stylesheet" href="../css/dashboard.css">
     <link rel="stylesheet" href="../../assets/themify-icons/themify-icons.css">
-     <!-- general css -->
-     <link rel="stylesheet" href="../css/general-style.css">
+    <!-- general css -->
+    <link rel="stylesheet" href="../css/general-style.css">
 
     <!-- font-awesome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/fontawesome.min.css">
-    
+
     <title>Dashboard</title>
 </head>
 
@@ -158,12 +158,168 @@
 
         <section id="main-view">
             <div class="container">
-                <div class="row">
-                    
+                <div class="row dashboard-title">
+                    <div class="py-5">
+                        <div class="row g-4 align-items-center">
+                            <div class="col">
+                                <h1 class="h3 m-0">Dashboard</h1>
+                            </div>
+                            <div class="col-auto d-flex"><select class="form-select me-3">
+                                    <option selected="">1 December, 2022</option>
+                                </select><a href="#" class="btn btn-primary">Export</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row content-dashboard g-4 g-xl-3    ">
+                    <!-- total sell -->
+                    <div class="col-12 col-md-4 d-flex">
+                        <div class="card card-statistic flex-grow-1 p-3"
+                            data-sa-container-query="{'340':'card-statistic--size--lg'}">
+                            <div class="card-statistic__header">
+                                <div class="widget-header__title">Total sells</div>
+                                <div class="widget-header__actions">
+                                    <div class="dropdown">
+                                        <button type="button" class="btn btn-sm btn-sa-muted d-block"
+                                            id="widget-context-menu-1" data-bs-toggle="dropdown" aria-expanded="false"
+                                            aria-label="More"><svg xmlns="http://www.w3.org/2000/svg" width="3"
+                                                height="13" fill="currentColor">
+                                                <path
+                                                    d="M1.5,8C0.7,8,0,7.3,0,6.5S0.7,5,1.5,5S3,5.7,3,6.5S2.3,8,1.5,8z M1.5,3C0.7,3,0,2.3,0,1.5S0.7,0,1.5,0 S3,0.7,3,1.5S2.3,3,1.5,3z M1.5,10C2.3,10,3,10.7,3,11.5S2.3,13,1.5,13S0,12.3,0,11.5S0.7,10,1.5,10z">
+                                                </path>
+                                            </svg>
+                                        </button>
+                                        <ul class="dropdown-menu dropdown-menu-end"
+                                            aria-labelledby="widget-context-menu-1" style="">
+                                            <li><a class="dropdown-item" href="#">Settings</a></li>
+                                            <li><a class="dropdown-item" href="#">Move</a></li>
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                            <li><a class="dropdown-item text-danger" href="#">Remove</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-statistic__body">
+                                <h2 class="card-statistic__value">$3799.00</h2>
+                                <div class="card-statistic__delta card-statistic__delta--rise">
+                                    <div class="card-statistic__delta-direction">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9"
+                                            fill="currentColor">
+                                            <path d="M9,0L8,6.1L2.8,1L9,0z"></path>
+                                            <circle cx="1" cy="8" r="1"></circle>
+                                            <rect x="0" y="4.5"
+                                                transform="matrix(0.7071 -0.7071 0.7071 0.7071 -2.864 4.0858)"
+                                                width="7.1" height="2"></rect>
+                                        </svg>
+                                    </div>
+                                    <div class="card-statistic__delta-value">34.7%</div>
+                                </div>
+                                <div class="card-statistic__caption">Compared to November 2022</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Average order value -->
+                    <div class="col-12 col-md-4 d-flex">
+                        <div class="card card-statistic flex-grow-1 p-3"
+                            data-sa-container-query="{'340':'card-statistic--size--lg'}">
+                            <div class="card-statistic__header">
+                                <div class="widget-header__title">Average order value</div>
+                                <div class="widget-header__actions">
+                                    <div class="dropdown">
+                                        <button type="button" class="btn btn-sm btn-sa-muted d-block"
+                                            id="widget-context-menu-1" data-bs-toggle="dropdown" aria-expanded="false"
+                                            aria-label="More"><svg xmlns="http://www.w3.org/2000/svg" width="3"
+                                                height="13" fill="currentColor">
+                                                <path
+                                                    d="M1.5,8C0.7,8,0,7.3,0,6.5S0.7,5,1.5,5S3,5.7,3,6.5S2.3,8,1.5,8z M1.5,3C0.7,3,0,2.3,0,1.5S0.7,0,1.5,0 S3,0.7,3,1.5S2.3,3,1.5,3z M1.5,10C2.3,10,3,10.7,3,11.5S2.3,13,1.5,13S0,12.3,0,11.5S0.7,10,1.5,10z">
+                                                </path>
+                                            </svg>
+                                        </button>
+                                        <ul class="dropdown-menu dropdown-menu-end"
+                                            aria-labelledby="widget-context-menu-1" style="">
+                                            <li><a class="dropdown-item" href="#">Settings</a></li>
+                                            <li><a class="dropdown-item" href="#">Move</a></li>
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                            <li><a class="dropdown-item text-danger" href="#">Remove</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-statistic__body">
+                                <h2 class="card-statistic__value">$272.98</h2>
+                                <div class="card-statistic__delta card-statistic__delta--fall">
+                                    <div class="card-statistic__delta-direction">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9"
+                                            fill="currentColor">
+                                            <path d="M2.8,8L8,2.9L9,9L2.8,8z"></path>
+                                            <circle cx="1" cy="1" r="1"></circle>
+                                            <rect x="0" y="2.5"
+                                                transform="matrix(0.7071 0.7071 -0.7071 0.7071 3.5 -1.4497)" width="7.1"
+                                                height="2">
+                                            </rect>
+                                        </svg>
+                                    </div>
+                                    <div class="card-statistic__delta-value">12.0%</div>
+                                </div>
+                                <div class="card-statistic__caption">Compared to November 2022</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Total oders -->
+                    <div class="col-12 col-md-4 d-flex">
+                        <div class="card card-statistic flex-grow-1 p-3"
+                            data-sa-container-query="{'340':'card-statistic--size--lg'}">
+                            <div class="card-statistic__header">
+                                <div class="widget-header__title">Total orders</div>
+                                <div class="widget-header__actions">
+                                    <div class="dropdown">
+                                        <button type="button" class="btn btn-sm btn-sa-muted d-block"
+                                            id="widget-context-menu-1" data-bs-toggle="dropdown" aria-expanded="false"
+                                            aria-label="More"><svg xmlns="http://www.w3.org/2000/svg" width="3"
+                                                height="13" fill="currentColor">
+                                                <path
+                                                    d="M1.5,8C0.7,8,0,7.3,0,6.5S0.7,5,1.5,5S3,5.7,3,6.5S2.3,8,1.5,8z M1.5,3C0.7,3,0,2.3,0,1.5S0.7,0,1.5,0 S3,0.7,3,1.5S2.3,3,1.5,3z M1.5,10C2.3,10,3,10.7,3,11.5S2.3,13,1.5,13S0,12.3,0,11.5S0.7,10,1.5,10z">
+                                                </path>
+                                            </svg>
+                                        </button>
+                                        <ul class="dropdown-menu dropdown-menu-end"
+                                            aria-labelledby="widget-context-menu-1" style="">
+                                            <li><a class="dropdown-item" href="#">Settings</a></li>
+                                            <li><a class="dropdown-item" href="#">Move</a></li>
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                            <li><a class="dropdown-item text-danger" href="#">Remove</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-statistic__body">
+                                <h2 class="card-statistic__value">578</h2>
+                                <div class="card-statistic__delta card-statistic__delta--rise">
+                                    <div class="card-statistic__delta-direction">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="9" height="9" viewBox="0 0 9 9"
+                                            fill="currentColor">
+                                            <path d="M9,0L8,6.1L2.8,1L9,0z"></path>
+                                            <circle cx="1" cy="8" r="1"></circle>
+                                            <rect x="0" y="4.5"
+                                                transform="matrix(0.7071 -0.7071 0.7071 0.7071 -2.864 4.0858)"
+                                                width="7.1" height="2"></rect>
+                                        </svg>
+                                    </div>
+                                    <div class="card-statistic__delta-value">28.9%</div>
+                                </div>
+                                <div class="card-statistic__caption">Compared to November 2022</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-        
+
         <my-footer></my-footer>
         <!-- <footer id="footer">
             <div class="footer-container border-top d-flex justify-content-between align-items-center">
@@ -186,9 +342,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
-        <!-- js for side bar -->
-        <script src="../js/general-template.js"></script>
-        <!-- js for this page -->
+    <!-- js for side bar -->
+    <script src="../js/general-template.js"></script>
+    <!-- js for this page -->
     <script src="../js/doashboard.js"></script>
 
 </body>

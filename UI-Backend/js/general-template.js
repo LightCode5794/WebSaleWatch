@@ -15,7 +15,7 @@ class MySidebar extends HTMLElement {
 
                 <ul class="nav nav-pills flex-column mb-auto">
                     <li class="nav-item">
-                        <a href="#" class="nav-link d-flex align-items-center" aria-current="page">
+                        <a href="#" class="nav-link link-dark active d-flex align-items-center" aria-current="page">
 
                             <i class="nav-link__icon ti-dashboard"></i>
                             <span class="nav-link__title">Dashboard</span>
@@ -92,8 +92,8 @@ class MySidebar extends HTMLElement {
                         </div>
                     </li>
                 </ul>
-                <hr>
-                <div class="dropdown">
+               
+                <div class="admin-drop dropdown">
                     <a href="#" class="d-flex align-items-center link-dark text-decoration-none dropdown-toggle"
                         id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
                         <img src="https://img.freepik.com/free-vector/flat-customer-support-illustration_23-2148899114.jpg?w=1380&t=st=1670534289~exp=1670534889~hmac=bb999a83002a026b60c324104a2233f750aa17fb936fc01f86ed019ab0ea9654"
