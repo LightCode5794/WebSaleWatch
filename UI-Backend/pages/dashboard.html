@@ -170,7 +170,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="row content-dashboard g-4 g-xl-3    ">
+                <div class="row content-dashboard g-4 g-xl-4">
                     <!-- total sell -->
                     <div class="col-12 col-md-4 d-flex">
                         <div class="card card-statistic flex-grow-1 p-3"
@@ -346,83 +346,114 @@
                             </div>
                             <div class="saw-pulse__counter">148</div>
                             <div class="widget-table saw-pulse__table">
+
+                                <table class="table table-pages-user-actived">
+                                    <thead class="text-primary">
+                                        <tr>
+                                            <th> Active pages</th>
+                                            <th> Users </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <a href="#" class="link-dark">/Home</a>
+                                            </td>
+                                            <td>
+                                                140
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="#" class="link-dark">/Products</a>
+                                            </td>
+                                            <td>
+                                                102
+                                            </td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td>
+                                                <a href="#" class="link-dark">/About-Us</a>
+                                            </td>
+                                            <td>
+                                                23
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="#" class="link-dark">/Orders</a>
+                                            </td>
+                                            <td>
+                                                97
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="#" class="link-dark">/Contact</a>
+                                            </td>
+                                            <td>
+                                                34
+                                            </td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <a href="#" class="link-dark">/Blogs</a>
+                                            </td>
+                                            <td>
+                                                20
+                                            </td>
+
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- chart -->
+
+                    <div class="col-12 col-lg-8 col-xxl-9 d-flex">
+                        <div class="card flex-grow-1 saw-chart ">
+                            <!-- header card -->
+                            <div class="widget-header saw-pulse__header p-3 d-flex justify-content-between">
+                                <h2 class="widget-header__title fs-5">Income statistics</h2>
+                                <div class="widget-header__actions">
+                                    <div class="dropdown">
+                                        <button type="button" class="btn btn-sm btn-muted d-block"
+                                            id="widget-context-menu-4" data-bs-toggle="dropdown" aria-expanded="false"
+                                            aria-label="More"><svg xmlns="http://www.w3.org/2000/svg" width="3"
+                                                height="13" fill="currentColor">
+                                                <path
+                                                    d="M1.5,8C0.7,8,0,7.3,0,6.5S0.7,5,1.5,5S3,5.7,3,6.5S2.3,8,1.5,8z M1.5,3C0.7,3,0,2.3,0,1.5S0.7,0,1.5,0 S3,0.7,3,1.5S2.3,3,1.5,3z M1.5,10C2.3,10,3,10.7,3,11.5S2.3,13,1.5,13S0,12.3,0,11.5S0.7,10,1.5,10z">
+                                                </path>
+                                            </svg>
+                                        </button>
+                                        <ul class="dropdown-menu dropdown-menu-end"
+                                            aria-labelledby="widget-context-menu-4">
+                                            <li><a class="dropdown-item" href="#">Settings</a></li>
+                                            <li><a class="dropdown-item" href="#">Move</a></li>
+                                            <li>
+                                                <hr class="dropdown-divider">
+                                            </li>
+                                            <li><a class="dropdown-item text-danger" href="#">Remove</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- chart body -->
+                            <div class="chart-body p-3">
+                                <div class="chart-container">
+                                    <canvas id="chBar" ></canvas>
+                                </div>
                                 
-                                    <table class="table table-pages-user-actived">
-                                        <thead class="text-primary">
-                                            <tr>
-                                                <th> Active pages</th>
-                                                <th> Users </th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>
-                                                    <a href="#" class="link-dark">/Home</a>
-                                                </td>
-                                                <td>
-                                                    140
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <a href="#" class="link-dark">/Products</a>
-                                                </td>
-                                                <td>
-                                                    102
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <a href="#" class="link-dark">/cart</a>
-                                                </td>
-                                                <td>
-                                                    80
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <a href="#" class="link-dark">/About-Us</a>
-                                                </td>
-                                                <td>
-                                                    23
-                                                </td>
-
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <a href="#" class="link-dark">/Orders</a>
-                                                </td>
-                                                <td>
-                                                    97
-                                                </td>
-
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <a href="#" class="link-dark">/Contact</a>
-                                                </td>
-                                                <td>
-                                                    34
-                                                </td>
-
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <a href="#" class="link-dark">/Blogs</a>
-                                                </td>
-                                                <td>
-                                                    20
-                                                </td>
-
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                               
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
         </section>
 
         <my-footer></my-footer>
@@ -449,8 +480,11 @@
         crossorigin="anonymous"></script>
     <!-- js for side bar -->
     <script src="../js/general-template.js"></script>
+    <!-- js for chart -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
     <!-- js for this page -->
     <script src="../js/doashboard.js"></script>
+
 
 </body>
 
