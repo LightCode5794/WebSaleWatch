@@ -21,9 +21,12 @@ $(window).on('load', function () {
                 columnWidth: '.grid-sizer'
             }
         });
-    });
+    }
+    
+    );
 
 // filter for watches grid
+
 
 function filterSelection(filterClass) {
     //   var x, i;
