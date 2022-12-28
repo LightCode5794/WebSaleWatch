@@ -281,12 +281,13 @@ iconSearch.addEventListener("click", () => iconSearch.classList.toggle("toggled"
 
 var current = 0;
 for (var i = 0; i < document.links.length; i++) {
-    if (document.links[i].href === document.URL) {
+    if (document.links[i].className != "logo" && document.links[i].href === document.URL) {
         current = i;
         console.log(document.links[i].href + "  " + document.URL);
         break;
         
     }
 }
-console.log(current);
-document.links[current].className += " active";
+// console.log(current);
+document.links[current].className += " actived-page";
+// console.log(document.links[current].className);

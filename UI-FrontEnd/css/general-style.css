@@ -379,11 +379,11 @@
      color: var(--color-text-hover);
  }
 /* when click nav header */
- #nav-main-menu .active{
+ #nav-main-menu .actived-page{
     color: var(--color-text-hover);
  }
 
-.active.hover-underline-animation::after {
+.actived-page.hover-underline-animation::after {
     transform: scaleX(1);
 }
 
