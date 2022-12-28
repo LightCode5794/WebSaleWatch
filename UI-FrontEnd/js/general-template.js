@@ -123,7 +123,7 @@ class MyHeader extends HTMLElement {
         
         
                     <!-- menu -->
-                    <div class="nav-main-menu">
+                    <div id="nav-main-menu" >
                         <ul>
                             <li><a class="hover-underline-animation" href="index.html">Home</a></li>
                             <li><a class="hover-underline-animation" href="watches.html">Watches</a></li>
@@ -166,7 +166,7 @@ class MyHeader extends HTMLElement {
 }
 customElements.define('my-header', MyHeader);
 
-//create header
+//create footer
 class MyFooter extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
@@ -276,3 +276,17 @@ function closeSidebar() {
 // toggle for search button
 let iconSearch = document.querySelector(".search__toggle");
 iconSearch.addEventListener("click", () => iconSearch.classList.toggle("toggled"))
+
+// funtion for highlight navigation header
+
+var current = 0;
+for (var i = 0; i < document.links.length; i++) {
+    if (document.links[i].href === document.URL) {
+        current = i;
+        console.log(document.links[i].href + "  " + document.URL);
+        break;
+        
+    }
+}
+console.log(current);
+document.links[current].className += " active";

@@ -203,3 +203,6 @@ function closeSidebar(){
     contentPage.style.marginLeft = '0';
 }
 
+
+
+

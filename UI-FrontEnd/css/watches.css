@@ -90,13 +90,13 @@
 }
 
 
-#filter-btns-text .active,
+#filter-btns-text  .filter-actived,
 #filter-btns-text .btn:hover {
     color: #000000;
 }
 
 
-.active.hover-underline-animation::after {
+.filter-actived.hover-underline-animation::after {
     transform: scaleX(1);
 }
 
