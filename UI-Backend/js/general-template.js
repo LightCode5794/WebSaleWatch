@@ -15,7 +15,7 @@ class MySidebar extends HTMLElement {
 
                 <ul class="nav nav-pills flex-column mb-auto">
                     <li class="nav-item">
-                        <a href="#" class="nav-link link-dark active d-flex align-items-center" aria-current="page">
+                        <a href="dashboard.html" class="nav-link link-dark active d-flex align-items-center" aria-current="page">
 
                             <i class="nav-link__icon ti-dashboard"></i>
                             <span class="nav-link__title">Dashboard</span>
@@ -33,7 +33,7 @@ class MySidebar extends HTMLElement {
                         </a>
                         <div class="nav-item__sub-menu collapse" id="catalog-collapse">
                             <ul class="sub-btn-nav list-unstyled fw-normal">
-                                <li><a href="#" class="sub-btn-nav__item nav-link link-dark rounded">Products List</a>
+                                <li><a href="productsList.html" class="sub-btn-nav__item nav-link link-dark rounded">Products List</a>
                                 </li>
                                 <li><a href="#" class="sub-btn-nav__item nav-link link-dark rounded">Categories list</a>
                                 </li>
@@ -68,7 +68,7 @@ class MySidebar extends HTMLElement {
                         </a>
                         <div class="collapse nav-item__sub-menu" id="oder-collapse">
                             <ul class="sub-btn-nav list-unstyled fw-normal">
-                                <li><a href="#" class="sub-btn-nav__item nav-link link-dark rounded">Orders List</a>
+                                <li><a href="odersList.html" class="sub-btn-nav__item nav-link link-dark rounded">Orders List</a>
                                 </li>
                                 <li><a href="#" class="sub-btn-nav__item nav-link link-dark rounded">Order</a></li>
                             </ul>
@@ -150,7 +150,7 @@ class MyFooter extends HTMLElement {
             <div class="footer-container border-top d-flex justify-content-between align-items-center ">
 
                 <span class="copyright p-3 fw-light" style="font-size: 13px;">
-                    Copyright <i class="fa-regular fa-copyright"></i> Team 5 - Web Watch Clinic 2022
+                    Copyright <i class="fa-regular fa-copyright"></i> Team 7 - Web Watch Clinic 2022
                 </span>
 
                 <span class="author p-3 fw-light" style="font-size: 13px">

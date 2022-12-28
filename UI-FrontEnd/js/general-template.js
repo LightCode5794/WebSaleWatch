@@ -75,7 +75,7 @@ class MyHeader extends HTMLElement {
                 <div class="top-bar">
                     <div class="content-topbar">
                         <div class="left-top-bar">
-                            <p><i class="fa-solid fa-phone"></i> 012343569 </p>
+                             <p><i class="fa-solid fa-phone"></i> 012343569 </p>
                         </div>
         
                         <div class="right-top-bar">
@@ -218,7 +218,7 @@ class MyFooter extends HTMLElement {
         </div>
       </div>
       <div class="copyright">
-        Copyright <i class="fa-regular fa-copyright"></i> Team 5 | Made with <i class="ti-heart"></i> by Tran Trong
+        Copyright <i class="fa-regular fa-copyright"></i> Team 7 | Made with <i class="ti-heart"></i> by Tran Trong
         Hoang and Bui Le Hoai An
       </div>
     </div>
