@@ -53,28 +53,28 @@
      transform: scaleX(1);
  }
 
-/* overlay */
+ /* overlay */
 
  .overlay {
-    cursor: pointer;
-    position: fixed;
-    display: none;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 2
-}
+     cursor: pointer;
+     position: fixed;
+     display: none;
+     width: 100%;
+     height: 100%;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     background-color: rgba(0, 0, 0, 0.5);
+     z-index: 2
+ }
 
  /* side bar */
  .sidebar {
      position: fixed;
      width: var(--width-sidebar);
      height: 100%;
-     left:  calc(var(--width-sidebar) * -1);
+     left: calc(var(--width-sidebar) * -1);
      overflow: hidden;
      transition: 0.4s ease;
      transition-property: left;
@@ -138,23 +138,44 @@
  .account-menu,
  .cart-menu,
  .language-menu {
+    padding: 8px 0;
      display: flex;
      justify-content: space-between;
-     position: relative;
+    
+     align-items: center;
  }
 
- .language-menu .ti-angle-down,
- .language-selected {
-     padding: 8px;
+ .language-menu .caption {
+     width: 100%;
+     /* padding: 8px 0; */
+
+ }
+
+ .language-menu .pick-language-btn {
+     /* padding: 8px; */
+     cursor: pointer;
+     display: flex;
+     align-items: center;
+     gap: 4px;
+     position: relative;
+     /* height: 100%; */
+ }
+
+
+ .pick-language-btn:hover .language-sub-menu {
+     display: block;
  }
 
  .language-sub-menu {
+     display: none;
      padding: 12px;
      list-style-type: none;
      position: absolute;
-     top: 100%;
+     bottom: 102%;
      right: -16px;
      box-shadow: 2px 2px 5px gray;
+     background: #fff;
+     z-index: 1000;
  }
 
  .language-menu li {
@@ -178,12 +199,12 @@
 
  }
 
- .bar-button:hover {
+ /* .bar-button:hover {
      background-color: rgba(0, 0, 0, 0.5);
-     /* background: red; */
- }
+    
+ } */
 
- 
+
 
  /* header */
  a {
@@ -287,7 +308,7 @@
  }
 
  .sub-menu-top-bar a:hover {
-     display: block;
+     /* display: block; */
      color: var(--color-text-hover);
      ;
 
@@ -468,20 +489,21 @@
      }
 
  }
+
  @media screen and (max-width: px) {
 
-    :root{
-        --width-sidebar: 16rem !important;
-    }
+     :root {
+         --width-sidebar: 16rem !important;
+     }
 
-}
+ }
 
 
 
  /* footer */
- .footer-container{
-    width: 100%;
-    background-color: #111111;
+ .footer-container {
+     width: 100%;
+     background-color: #111111;
  }
 
  .content-footer a {
@@ -495,7 +517,7 @@
  }
 
  .content-footer {
-    
+
      padding: 80px 0 0 0;
  }
 

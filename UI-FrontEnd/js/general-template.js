@@ -17,39 +17,41 @@ class MySidebar extends HTMLElement {
                     <input type="search" class="search-field" placeholder="Search watches…" value="" name=""
                         autocomplete="off">
                 </div>
-                <a href="#" class="bar-item bar-button">Home</a>
-                <a href="#" class="bar-item bar-button">Watches</a>
-                <a href="#" class="bar-item bar-button">About</a>
-                <a href="#" class="bar-item bar-button">Blog</a>
-                <a href="#" class="bar-item bar-button">Contact</a>
+                <a href="#" class="bar-item bar-button hover-underline-animation">Home</a>
+                <a href="#" class="bar-item bar-button hover-underline-animation">Watches</a>
+                <a href="#" class="bar-item bar-button hover-underline-animation">About</a>
+                <a href="#" class="bar-item bar-button hover-underline-animation">Blog</a>
+                <a href="#" class="bar-item bar-button hover-underline-animation">Contact</a>
             </div>
 
             <div class="bottom-extras">
                 <div class="menu-divider"></div>
-                <div class="account-menu">
+                <div class="account-menu hover-underline-animation">
 
                     <a href="#" class="">Login</a>
                     <i class="ti-user"></i>
 
                 </div>
                 <div class="menu-divider"></div>
-                <div class="cart-menu">
+                <div class="cart-menu hover-underline-animation">
 
                     <a href="#" class="">Cart</a>
                     <i class="ti-shopping-cart"></i>
 
                 </div>
-                <div class="menu-divider"></div>
-                <div class="language-menu">
+                <div class="menu-divider "></div>
+                <div class="language-menu hover-underline-animation">
 
-                    <a href="#" class="">Language</a>
-                    <label class="language-selected">English</label>
-                    <i class="ti-angle-down"></i>
-                    <ul class="language-sub-menu">
-                        <li><a href="#">English</a> </li>
-                        <li><a href="#">Tiếng Việt</a></li>
-                    </ul>
-
+                    <div class = "caption">Language</div>
+                    <div class = "pick-language-btn">
+                        <label class="language-selected" style = "cursor: pointer">English</label>
+                        <i class="ti-angle-down"></i>
+                        <ul class="language-sub-menu">
+                             <li><a href="#">English</a></li>
+                             <li><a href="#">Tiếng Việt</a></li>
+                        </ul>
+                    </div>
+                
                 </div>
             </div>
         </div>
