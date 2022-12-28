@@ -6,20 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"> </script>
+    <!-- css for this content page -->
     <link rel="stylesheet" href="css/watches.css">
-
+    <!-- css for header, footer, sidebar -->
+    <link rel="stylesheet" href="./css/general-style.css">
     <title>Shop</title>
 </head>
 
 <body>
 
-    <header id="header">
-        <script>
-            $(function () {
-                $("#header").load("./layouts/header.html");
-            });
-        </script>
-    </header>
+    <my-sidebar></my-sidebar>
+    <my-header></my-header>
 
     <!-- products -->
     <div class="container">
@@ -333,17 +330,17 @@
         </div>
 
     </div>
-    <footer id="footer">
 
-        <script>
-            $(function () {
-                $("#footer").load("./layouts/footer.html");
-            });
-        </script>
 
-    </footer>
+    <my-footer></my-footer>
+
+
+    <!-- js for filter product -->
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <!-- js for this content page -->
     <script src="js/watches.js"></script>
+  <!-- js for header, sidebar, footer -->
+  <script src="./js/general-template.js"></script>
 
 </body>
 

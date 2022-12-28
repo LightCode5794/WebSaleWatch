@@ -5,16 +5,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- add jquery -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js">  </script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/custom-style.css">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- css for themify-icons -->
     <link rel="stylesheet" href="../assets/themify-icons/themify-icons.css">
+    <!-- css for flickity slider -->
     <link rel="stylesheet" href="https://unpkg.com/flickity@2.3.0/dist/flickity.css">
+    <!-- css for slick-carousel -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-   
+   <!-- css for header, footer, sidebar -->
+    <link rel="stylesheet" href="./css/general-style.css">
+    <!-- css for this page content -->
+    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
     <!-- <script type="module" src="js/createHeaderAndFooter.js"></script> -->
 </head>
@@ -22,74 +28,11 @@
 <body>
     <div class="main">
         <!-- Sidebar -->
-        <div class="sidebar" id="mySidebar">
-            <div class="content-sidebar">
-                <div class="bar-logo">
-                    <a href="#" class="logo">
-                        <img src="assets/images/LogoShopWatch.png" alt="IMG_LOGO">
-                    </a>
-                </div>
-                <!-- logo -->
-                <div class="menu-sidebar">
-                    <!-- <button class="bar-item bar-button xxlarge" onclick="closeSidebar()">Close &times;</button> -->
-                    <div class="search-button-group">
-                        <i class="fa-solid fa-magnifying-glass " id="icon_search"></i>
-                        <input type="search" class="search-field" placeholder="Search watches…" value="" name=""
-                            autocomplete="off">
-                    </div>
-                    <a href="#" class="bar-item bar-button">Home</a>
-                    <a href="#" class="bar-item bar-button">Watches</a>
-                    <a href="#" class="bar-item bar-button">About</a>
-                    <a href="#" class="bar-item bar-button">Blog</a>
-                    <a href="#" class="bar-item bar-button">Contact</a>
-                </div>
+        <my-sidebar></my-sidebar>
 
-                <div class="bottom-extras">
-                    <div class="menu-divider"></div>
-                    <div class="account-menu">
+        <!-- header -->
+        <my-header></my-header>
 
-                        <a href="#" class="">Login</a>
-                        <i class="ti-user"></i>
-
-                    </div>
-                    <div class="menu-divider"></div>
-                    <div class="cart-menu">
-
-                        <a href="#" class="">Cart</a>
-                        <i class="ti-shopping-cart"></i>
-
-                    </div>
-                    <div class="menu-divider"></div>
-                    <div class="language-menu">
-
-                        <a href="#" class="">Language</a>
-                        <label class="language-selected">English</label>
-                        <i class="ti-angle-down"></i>
-                        <ul class="language-sub-menu">
-                            <li><a href="#">English</a> </li>
-                            <li><a href="#">Tiếng Việt</a></li>
-                        </ul>
-
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
-        <!-- overlay -->
-        <div class="overlay" onclick="closeSidebar()" id="myOverlay"></div>
-
-        <!-- page content -->
-        <header id="header">
-            <script> 
-                $(function(){
-                  $("#header").load("./layouts/header.html"); 
-                });
-            </script> 
-        </header>
-        <!-- <my-header></my-header> -->
-
-       
         <!-- navigation -->
         <nav class="nav">
         </nav>
@@ -497,7 +440,7 @@
             </section>
         </section>
 
-        <footer id="footer">
+        <!-- <footer id="footer">
            
                 <script> 
                     $(function(){
@@ -505,13 +448,20 @@
                     });
                 </script> 
             
-        </footer>
+        </footer> -->
+        <!-- footer -->
+        <my-footer></my-footer>
 
     </div>
 
+    <!-- js for slick-carousel -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.js"></script>
-    <script src="js/index.js"></script>
+    <!-- js for flickity slider -->
     <script src="https://unpkg.com/flickity@2.3.0/dist/flickity.pkgd.min.js"></script>
+    <!-- js for  this content page -->
+    <script src="js/index.js"></script>
+    <!-- js for header, sidebar, footer -->
+    <script src="./js/general-template.js"></script>
 
 </body>
 

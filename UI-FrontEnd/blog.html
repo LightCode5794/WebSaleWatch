@@ -6,24 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- script to load header -->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"> </script>
+    <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"> </script> -->
     <!-- bootstrap5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+         <!-- css for header, footer, sidebar -->
+    <link rel="stylesheet" href="./css/general-style.css">
     <!-- this page style -->
     <link rel="stylesheet" href="./css/blog.css">
+
     <title>Blog</title>
 </head>
 
 <body>
+    <my-sidebar></my-sidebar>
+
     <!-- header -->
-    <header id="header">
-        <script>
-            $(function () {
-                $("#header").load("./layouts/header.html");
-            });
-        </script>
-    </header>
+    <my-header></my-header>
 
     <!-- find-blog-title page -->
     <section class="page-title" style="background-image: url('../assets/images/page-title/blog.jpg');">
@@ -385,17 +384,13 @@
         </div>
     </div>
     <!-- footer -->
-    <footer id="footer">
-        <script>
-            $(function () {
-                $("#footer").load("./layouts/footer.html");
-            });
-        </script>
-    </footer>
+    <my-footer></my-footer>
     <!-- js for boostrap5 -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+        <!-- js for header, sidebar, footer -->
+    <script src="./js/general-template.js"></script>
 </body>
 
 </html>

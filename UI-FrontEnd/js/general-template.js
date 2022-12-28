@@ -2,7 +2,61 @@
 class MySidebar extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
-      
+        <div class="sidebar" id="mySidebar">
+        <div class="content-sidebar">
+            <div class="bar-logo">
+                <a href="#" class="logo">
+                    <img src="assets/images/LogoShopWatch.png" alt="IMG_LOGO">
+                </a>
+            </div>
+            <!-- logo -->
+            <div class="menu-sidebar">
+                <!-- <button class="bar-item bar-button xxlarge" onclick="closeSidebar()">Close &times;</button> -->
+                <div class="search-button-group">
+                    <i class="fa-solid fa-magnifying-glass " id="icon_search"></i>
+                    <input type="search" class="search-field" placeholder="Search watches…" value="" name=""
+                        autocomplete="off">
+                </div>
+                <a href="#" class="bar-item bar-button">Home</a>
+                <a href="#" class="bar-item bar-button">Watches</a>
+                <a href="#" class="bar-item bar-button">About</a>
+                <a href="#" class="bar-item bar-button">Blog</a>
+                <a href="#" class="bar-item bar-button">Contact</a>
+            </div>
+
+            <div class="bottom-extras">
+                <div class="menu-divider"></div>
+                <div class="account-menu">
+
+                    <a href="#" class="">Login</a>
+                    <i class="ti-user"></i>
+
+                </div>
+                <div class="menu-divider"></div>
+                <div class="cart-menu">
+
+                    <a href="#" class="">Cart</a>
+                    <i class="ti-shopping-cart"></i>
+
+                </div>
+                <div class="menu-divider"></div>
+                <div class="language-menu">
+
+                    <a href="#" class="">Language</a>
+                    <label class="language-selected">English</label>
+                    <i class="ti-angle-down"></i>
+                    <ul class="language-sub-menu">
+                        <li><a href="#">English</a> </li>
+                        <li><a href="#">Tiếng Việt</a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- overlay -->
+    <div class="overlay" id="myOverlay"></div>
    `
     }
 }
@@ -94,7 +148,8 @@ class MyHeader extends HTMLElement {
                             </li>
         
                             <li class="icon-hamburger">
-                                <div onclick="openSidebar()"><i class="ti-menu"></i> </div>
+                                
+                                <i class="ti-menu"></i> 
                             </li>
         
                         </ul>
@@ -113,62 +168,107 @@ customElements.define('my-header', MyHeader);
 class MyFooter extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
-        <div class="container">
-<div class="content-footer">
-    <div class="widget-list">
+        <div class="footer-container">
+  <div class="container">
+    <div class="content-footer">
+      <div class="widget-list">
         <div class="widget">
-            <div class="widget-title">
-                <h2>Store</h2>
-            </div>
-            <div class="widget-content">
-                <a class="hover-underline-animation">Man</a>
-                <br>
-                <a class="hover-underline-animation" >Women</a>
-                <br>
-                <a class="hover-underline-animation" href="contact.html">Store location</a>
-                <br>
-                <a class="hover-underline-animation" href="blog.html">Blog</a>
-                <br>
-                <a class="hover-underline-animation" href="about.html">About</a>
-                <br>
-            </div>
+          <div class="widget-title">
+            <h2>Store</h2>
+          </div>
+          <div class="widget-content">
+            <a class="hover-underline-animation">Man</a>
+            <br>
+            <a class="hover-underline-animation">Women</a>
+            <br>
+            <a class="hover-underline-animation" href="contact.html">Store location</a>
+            <br>
+            <a class="hover-underline-animation" href="blog.html">Blog</a>
+            <br>
+            <a class="hover-underline-animation" href="about.html">About</a>
+            <br>
+          </div>
         </div>
 
         <div class="widget">
-            <div class="widget-title">
-                <h2>Information team</h2>
-            </div>
-            <div class="widget-content">
-                <p>Trần Trọng Hoàng</p>
-                <p>Bùi Lê Hoài An</p>
-            </div>
+          <div class="widget-title">
+            <h2>Information team</h2>
+          </div>
+          <div class="widget-content">
+            <p>Trần Trọng Hoàng</p>
+            <p>Bùi Lê Hoài An</p>
+          </div>
         </div>
 
         <div class="widget">
-            <div class="widget-title">
-                <h2>Follow Us</h2>
-            </div>
-            <div class="widget-content">
-                <p>Help us serve more customers</p>
-                <ul>
-                    <li><i class="fa-brands fa-square-facebook"></i></li>
-                    <li><i class="fa-brands fa-twitter"></i></li>
-                    <li><i class="fa-brands fa-instagram"></i></li>
-                    <li><i class="fa-brands fa-pinterest"></i></li>
-                </ul>
-            </div>
+          <div class="widget-title">
+            <h2>Follow Us</h2>
+          </div>
+          <div class="widget-content">
+            <p>Help us serve more customers</p>
+            <ul>
+              <li><i class="fa-brands fa-square-facebook"></i></li>
+              <li><i class="fa-brands fa-twitter"></i></li>
+              <li><i class="fa-brands fa-instagram"></i></li>
+              <li><i class="fa-brands fa-pinterest"></i></li>
+            </ul>
+          </div>
         </div>
-    </div>
-    <div class="copyright">
+      </div>
+      <div class="copyright">
         Copyright <i class="fa-regular fa-copyright"></i> Team 5 | Made with <i class="ti-heart"></i> by Tran Trong
         Hoang and Bui Le Hoai An
+      </div>
     </div>
-</div>
+  </div>
 </div>
       `
     }
 }
 customElements.define('my-footer', MyFooter);
+
+
+// event for sidebar
+let menuBtn = document.querySelector(".icon-hamburger");
+var sidebar = document.getElementById("mySidebar");
+//var contentPage = document.getElementById("content-page");
+var widthSidebar = getComputedStyle(document.documentElement).getPropertyValue('--width-sidebar');
+var overlay = document.getElementById("myOverlay");
+
+menuBtn.addEventListener("click", () => {
+
+    //open sidebar
+    if (sidebar.offsetLeft < 0) {
+        openSidebar();
+        overlay.style.display = "block";
+
+    }
+    //close sidebar
+    else {
+        closeSidebar();
+    }
+})
+
+overlay.addEventListener("click", () => {
+    // close sidebar
+    closeSidebar();
+    overlay.style.display = "none";
+
+})
+
+function openSidebar() {
+    sidebar.style.left = '0';
+    // if (screen.width > 992) {
+    //     contentPage.style.marginLeft = widthSidebar;
+    // }
+
+}
+function closeSidebar() {
+    sidebar.style.left = ('-' + widthSidebar).replace(/\s/g, '');
+    // contentPage.style.marginLeft = '0';
+}
+
+
 
 //js for header
 // toggle for search button
