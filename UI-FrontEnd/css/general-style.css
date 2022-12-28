@@ -468,6 +468,14 @@
      }
 
  }
+ @media screen and (max-width: px) {
+
+    :root{
+        --width-sidebar: 16rem !important;
+    }
+
+}
+
 
 
  /* footer */

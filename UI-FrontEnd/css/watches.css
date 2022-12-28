@@ -55,7 +55,7 @@
     }
 
     .grid-sizer {
-        width: 24%;
+        width: 25%;
     }
 }
 
@@ -169,14 +169,14 @@
     border: 1px solid #e6e6e6;
 }
 
-.search-button-group {
+.search-product-button {
     display: flex;
     align-items: center;
     padding-left: 16px;
 }
 
 
-.search-button-group .search-field {
+.search-product-button .search-field {
     border: 0;
     border-radius: 0;
     background: transparent;
