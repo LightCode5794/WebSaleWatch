@@ -474,6 +474,7 @@ img {
     margin: auto;
 } 
 
+/* tesinmonal responsive */
 @media (min-width: 992px) {
     .testimonial-container .carousel {
         width: 60%;
@@ -539,8 +540,15 @@ img {
 @media (max-width: 995px) {
     .content-blogs{
        flex-wrap: wrap;
+      
+    }
+    .blog-item{
+        width: 100%;
+        margin-bottom: 16px;
     }
 }
+
+
 
 .blog-item {
     /* width: 33.333333%; */
