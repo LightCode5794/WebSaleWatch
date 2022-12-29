@@ -294,19 +294,24 @@ document.links[current].className += " actived-page";
 
 
 // // make header sticky when scroll
-// window.onscroll = function() {myFunction()};
+window.onscroll = function() {myFunction()};
 
-// var header = document.getElementById("myHeader");
-// var headerTop = document.getElementById("topBar");
-// //var sticky = header.offsetTop;
+var header = document.getElementById("myHeader");
+var headerTop = document.getElementById("topBar");
+//var sticky = header.offsetTop;
 
-// function myFunction() {
-//   if (window.pageYOffset > 40) {
-//     header.classList.add("sticky");
-//     console.log(headerTop.style.display);
-//   } else {
-//     header.classList.remove("sticky");
-//   }
+function myFunction() {
+  if (window.pageYOffset > 40) {
+    header.classList.add("sticky");
+    if(window.getComputedStyle(headerTop).display == "none"){
+        header.style.top = "0";
+        console.log("cc");
+    }
+   
+    
+  } else {
+    header.classList.remove("sticky");
+  }
   
   
-// }
+}
