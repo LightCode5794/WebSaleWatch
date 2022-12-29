@@ -70,9 +70,9 @@ class MyHeader extends HTMLElement {
         this.innerHTML = `   
         <!-- Header desktop -->
         <div class="container-menu-desktop" id = "myHeader">
-            <div class="header-top" id="headerTop">
+            <div class="header-top" >
                 <!-- Topbar -->
-                <div class="top-bar">
+                <div class="top-bar" id="topBar">
                     <div class="content-topbar">
                         <div class="left-top-bar">
                              <p><i class="fa-solid fa-phone"></i> 012343569 </p>
@@ -293,16 +293,20 @@ document.links[current].className += " actived-page";
 // console.log(document.links[current].className);
 
 
-// make header sticky when scroll
-window.onscroll = function() {myFunction()};
+// // make header sticky when scroll
+// window.onscroll = function() {myFunction()};
 
-var header = document.getElementById("myHeader");
-//var sticky = header.offsetTop;
+// var header = document.getElementById("myHeader");
+// var headerTop = document.getElementById("topBar");
+// //var sticky = header.offsetTop;
 
-function myFunction() {
-  if (window.pageYOffset > 40) {
-    header.classList.add("sticky");
-  } else {
-    header.classList.remove("sticky");
-  }
-}
+// function myFunction() {
+//   if (window.pageYOffset > 40) {
+//     header.classList.add("sticky");
+//     console.log(headerTop.style.display);
+//   } else {
+//     header.classList.remove("sticky");
+//   }
+  
+  
+// }
