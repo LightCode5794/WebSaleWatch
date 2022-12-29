@@ -304,7 +304,7 @@ function myFunction() {
   if (window.pageYOffset > 40) {
     header.classList.add("sticky");
     if(window.getComputedStyle(headerTop).display == "none"){
-        header.style.top = "0";
+        header.style.top = '0';
         console.log("cc");
     }
    
