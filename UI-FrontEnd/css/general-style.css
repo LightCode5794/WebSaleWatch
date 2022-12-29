@@ -228,6 +228,14 @@
      padding: 0;
  }
 
+
+ .sticky{
+    position:sticky;
+    top: -40px;
+    z-index: 1000;
+    background-color: #fff;
+ }
+
  .container-menu-desktop {
      border-bottom: 1px solid #ddd;
  }

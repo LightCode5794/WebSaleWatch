@@ -69,8 +69,8 @@ class MyHeader extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `   
         <!-- Header desktop -->
-        <div class="container-menu-desktop">
-            <div class="header-top">
+        <div class="container-menu-desktop" id = "myHeader">
+            <div class="header-top" id="headerTop">
                 <!-- Topbar -->
                 <div class="top-bar">
                     <div class="content-topbar">
@@ -291,3 +291,18 @@ for (var i = 0; i < document.links.length; i++) {
 // console.log(current);
 document.links[current].className += " actived-page";
 // console.log(document.links[current].className);
+
+
+// make header sticky when scroll
+window.onscroll = function() {myFunction()};
+
+var header = document.getElementById("myHeader");
+//var sticky = header.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset > 40) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
