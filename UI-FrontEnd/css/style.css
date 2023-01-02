@@ -1,23 +1,15 @@
 
 
-.menu-divider {
-    margin: 8px 0;
-    border-top: 1px solid #ddd;
-    border-top-color: rgba(0, 0, 0, .1);
-}
-
 #border-bottom {
     /* margin: 8px 0; */
     border-bottom: 1px solid #fff;
     width: 100px;
 
 }
-
+/* //////////////////////////////////////// */
 /* content home */
 
 /* slider */
-
-
 .mySlides {
     display: none;
     padding-top: 50%;

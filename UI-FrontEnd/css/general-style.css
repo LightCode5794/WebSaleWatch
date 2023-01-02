@@ -17,10 +17,18 @@
  }
 
 
+
  html,
  body {
      font-family: var(--font-web);
  }
+
+
+ .menu-divider {
+    margin: 8px 0;
+    border-top: 1px solid #ddd;
+    border-top-color: rgba(0, 0, 0, .1);
+}
 
  /* animate for hover an link */
  a {

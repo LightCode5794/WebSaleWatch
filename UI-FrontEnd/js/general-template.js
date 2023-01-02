@@ -283,14 +283,11 @@ var current = 0;
 for (var i = 0; i < document.links.length; i++) {
     if (document.links[i].className != "logo" && document.links[i].href === document.URL) {
         current = i;
-        console.log(document.links[i].href + "  " + document.URL);
         break;
         
     }
 }
-// console.log(current);
 document.links[current].className += " actived-page";
-// console.log(document.links[current].className);
 
 
 // // make header sticky when scroll
@@ -305,7 +302,6 @@ function myFunction() {
     header.classList.add("sticky");
     if(window.getComputedStyle(headerTop).display == "none"){
         header.style.top = '0';
-        console.log("cc");
     }
    
     
