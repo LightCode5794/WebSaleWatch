@@ -8,8 +8,8 @@
     <!--css bootstrap5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <!-- custom css for this dashboard -->
-    <link rel="stylesheet" href="../css/productsList.css">
+    <!-- custom css for this page -->
+    <link rel="stylesheet" href="../css/oders-List.css">
     <link rel="stylesheet" href="../../assets/themify-icons/themify-icons.css">
     <!-- general css -->
     <link rel="stylesheet" href="../css/general-style.css">
@@ -33,17 +33,145 @@
                             <div class="col">
                                 <h1 class="h3 m-0">Oders</h1>
                             </div>
-                            <div class="col-auto d-flex">
-                                New Oder
+                            <div class="col-auto fw-bold">
+                                <a href="#" class="btn btn-primary">New oder</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+
+                <div class="card">
+                    <div class="p-4">
+                        <input type="text" placeholder="Start typing to search for orders"
+                            class="form-control form-control--search mx-auto" id="table-search">
+                    </div>
+                    <div class="widget-table ps-2 pe-2">
+
+                        <table class="table sortable table__recent_orders">
+                            <thead class="text-primary">
+                                <tr>
+                                    <!-- <th class="w-min sorting_disabled" data-orderable="false" rowspan="1" colspan="1"
+                                        aria-label="" style="width: 16px;"><input type="checkbox"
+                                            class="form-check-input m-0 fs-exact-16 d-block" aria-label="...">
+                                    </th> -->
+                                    <!-- <th class="sorting sorting_desc" tabindex="0" aria-controls="DataTables_Table_0"
+                                        rowspan="1" colspan="1" aria-sort="descending"
+                                        aria-label="Number: activate to sort column ascending"
+                                        style="width: 82.0312px;">
+                                        Number</th> -->
+                                    <th> Number</th>
+                                    <th> Customer </th>
+                                    <th> Date</th>
+                                    <th> Status</th>
+                                    <th> Total</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- oder 1 -->
+                                <tr>
+                                    <td>#00745</td>
+                                    <td> Trần Trọng Hoàng</td>
+                                    <td>25/12/2022</td>
+                                    <td>
+                                        <div class="d-flex fs-6">
+                                            <div class="badge badge-sa-success">Completed</div>
+                                        </div>
+                                    </td>
+                                    <td>$2,742.00</td>
+                                </tr>
+                                <!-- oder 2 -->
+                                <tr>
+                                    <td>#00746</td>
+                                    <td> An Bùi</td>
+                                    <td>25/12/2022</td>
+                                    <td>
+                                        <div class="d-flex fs-6">
+                                            <div class="badge badge-sa-success">Completed</div>
+                                        </div>
+                                    </td>
+                                    <td>$1,232.00</td>
+                                </tr>
+                                <!-- oder 3 -->
+                                <tr>
+                                    <td>#00747</td>
+                                    <td> Alex Han</td>
+                                    <td>24/12/2022</td>
+                                    <td>
+                                        <div class="d-flex fs-6">
+                                            <div class="badge badge-sa-primary">Pending</div>
+                                        </div>
+                                    </td>
+                                    <td>$3,742.00</td>
+                                </tr>
+                                <!-- oder 4 -->
+                                <tr>
+                                    <td>#00748</td>
+                                    <td> Haan Rby</td>
+                                    <td>22/12/2022</td>
+                                    <td>
+                                        <div class="badge badge-sa-warning">Hold</div>
+                                    </td>
+                                    <td>$3,000.00</td>
+                                </tr>
+                                <!-- oder 5 -->
+                                <tr>
+                                    <td>#00749</td>
+                                    <td> Donal Bean</td>
+                                    <td>22/12/2022</td>
+                                    <td>
+                                        <div class="d-flex fs-6">
+                                            <div class="badge badge-sa-success">Completed</div>
+                                        </div>
+                                    </td>
+                                    <td>$6,0000.00</td>
+                                </tr>
+                                <!-- oder 6 -->
+                                <tr>
+                                    <td>#00750</td>
+                                    <td> Elon Mesk</td>
+                                    <td>21/12/2022</td>
+                                    <td>
+                                        <div class="d-flex fs-6">
+                                            <div class="badge badge-sa-danger">Canceled</div>
+                                        </div>
+                                    </td>
+                                    <td>$9,324.00</td>
+                                </tr>
+                                <!-- oder 7 -->
+                                <tr>
+                                    <td>#00751</td>
+                                    <td> Peter Pan</td>
+                                    <td>20/12/2022</td>
+                                    <td>
+                                        <div class="d-flex fs-6">
+                                            <div class="badge badge-sa-success">Completed</div>
+                                        </div>
+                                    </td>
+                                    <td>$5,2342.00</td>
+                                </tr>
+                                <!-- oder 8 -->
+                                <tr>
+                                    <td>#00752</td>
+                                    <td> Jonh Wick</td>
+                                    <td>19/12/2022</td>
+                                    <td>
+                                        <div class="d-flex fs-6">
+                                            <div class="badge badge-sa-success">Completed</div>
+                                        </div>
+                                    </td>
+                                    <td>$5,742.00</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
         </section>
         <my-footer></my-footer>
     </section>
-
-   
+    <!-- js for sort table -->
+    <script src="https://www.kryogenix.org/code/browser/sorttable/sorttable.js"></script>
+    <!-- js for bootstrap 5 -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
