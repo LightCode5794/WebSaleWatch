@@ -5,8 +5,8 @@ td {
     display: flex;
     align-items: center;    
 }
-.product-img {
+.customer-img {
     width: 50px;
-    
+    margin: 4px;
 }
 

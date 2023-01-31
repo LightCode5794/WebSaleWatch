@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--css bootstrap5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- css for data table -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.1/css/dataTables.bootstrap5.min.css">
+    <!-- custom css for this dashboard -->
+    <link rel="stylesheet" href="../css/customers-List.css">
+    <link rel="stylesheet" href="../../assets/themify-icons/themify-icons.css">
+    <!-- general css -->
+    <link rel="stylesheet" href="../css/general-style.css">
+
+    <!-- font-awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/fontawesome.min.css">
+
+    <title>customers List</title>
+</head>
+
+<body>
+    <my-sidebar></my-sidebar>
+    <section id="content-page">
+        <my-header></my-header>
+        <section id="main-view">
+            <div class="container">
+                <div class="row page-title">
+                    <div class="py-4">
+                        <div class="row align-items-center">
+                            <div class="col">
+                                <h1 class="h3 m-0">Customers</h1>
+                            </div>
+                            <div class="col-auto fw-bold">
+                                <a href="#" class="btn btn-primary">New Customer</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card p-2 m-1">
+                    <div class="widget-table">
+                        <table id="customers-table" class="table">
+                            <thead class="text-primary">
+                                <tr>
+                                    <th> ID</th>
+                                    <th> Name </th>
+                                    <th> Registered</th>
+                                    <th> Country</th>
+                                    <th> Spent</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Customer 1 -->
+                                <tr>
+                                    <td> #00001 </td>
+                                    <td>
+                                        <div class="table-column">
+                                            <img class="customer-img" src="../../assets/images/Customer/HoangTran.jpg" alt="">
+                                            <p class="m-0">Tran Trong Hoang</p>
+                                        </div>
+                                      
+                                    </td>
+                                    <td>September 28, 2022</td>
+                                    <td> Viet Nam</td>
+                                    <td>$30,500,000.00</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button type="button" class="btn btn-sm btn-muted d-block"
+                                                id="widget-context-menu-1" data-bs-toggle="dropdown" aria-expanded="false"
+                                                aria-label="More"><svg xmlns="http://www.w3.org/2000/svg" width="3"
+                                                    height="13" fill="currentColor">
+                                                    <path
+                                                        d="M1.5,8C0.7,8,0,7.3,0,6.5S0.7,5,1.5,5S3,5.7,3,6.5S2.3,8,1.5,8z M1.5,3C0.7,3,0,2.3,0,1.5S0.7,0,1.5,0 S3,0.7,3,1.5S2.3,3,1.5,3z M1.5,10C2.3,10,3,10.7,3,11.5S2.3,13,1.5,13S0,12.3,0,11.5S0.7,10,1.5,10z">
+                                                    </path>
+                                                </svg>
+                                            </button>
+                                            <ul class="dropdown-menu dropdown-menu-end"
+                                                aria-labelledby="widget-context-menu-1" >
+                                                <li><a class="dropdown-item" href="#">View</a></li>
+                                                <li>
+                                                    <hr class="dropdown-divider">
+                                                </li>
+                                                <li><a class="dropdown-item text-danger" href="#">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <!-- customer 2 -->
+                                <tr>
+                                    <td>#00002</td>
+                                    <td>
+                                        <div class="table-column">
+                                            <img class="customer-img" src="../../assets/images/Customer/AnBui.jpg" alt="">
+                                            <p class="m-0">An Bui</p>
+                                        </div>
+                                      
+                                    </td>
+                                    <td>September 28, 2022</td>
+                                    <td> Viet Nam</td>
+                                    <td>$30,000,000.00</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button type="button" class="btn btn-sm btn-muted d-block"
+                                                id="widget-context-menu-1" data-bs-toggle="dropdown" aria-expanded="false"
+                                                aria-label="More"><svg xmlns="http://www.w3.org/2000/svg" width="3"
+                                                    height="13" fill="currentColor">
+                                                    <path
+                                                        d="M1.5,8C0.7,8,0,7.3,0,6.5S0.7,5,1.5,5S3,5.7,3,6.5S2.3,8,1.5,8z M1.5,3C0.7,3,0,2.3,0,1.5S0.7,0,1.5,0 S3,0.7,3,1.5S2.3,3,1.5,3z M1.5,10C2.3,10,3,10.7,3,11.5S2.3,13,1.5,13S0,12.3,0,11.5S0.7,10,1.5,10z">
+                                                    </path>
+                                                </svg>
+                                            </button>
+                                            <ul class="dropdown-menu dropdown-menu-end"
+                                                aria-labelledby="widget-context-menu-1" >
+                                                <li><a class="dropdown-item" href="#">View</a></li>
+                                                <li>
+                                                    <hr class="dropdown-divider">
+                                                </li>
+                                                <li><a class="dropdown-item text-danger" href="#">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <!-- customer 3 -->
+                                <tr>
+                                    <td> #00747</td>
+                                    <td>
+                                        <div class="table-column">
+                                            <img class="customer-img" src="../../assets/images/Customer/customer1.jpg" alt="">
+                                            <p class="m-0">Alex Han</p>
+                                        </div>
+                                      
+                                    </td>
+                                    <td>November 1, 2022</td>
+                                    <td> USA</td>
+                                    <td>$7,100,000.00</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button type="button" class="btn btn-sm btn-muted d-block"
+                                                id="widget-context-menu-1" data-bs-toggle="dropdown" aria-expanded="false"
+                                                aria-label="More"><svg xmlns="http://www.w3.org/2000/svg" width="3"
+                                                    height="13" fill="currentColor">
+                                                    <path
+                                                        d="M1.5,8C0.7,8,0,7.3,0,6.5S0.7,5,1.5,5S3,5.7,3,6.5S2.3,8,1.5,8z M1.5,3C0.7,3,0,2.3,0,1.5S0.7,0,1.5,0 S3,0.7,3,1.5S2.3,3,1.5,3z M1.5,10C2.3,10,3,10.7,3,11.5S2.3,13,1.5,13S0,12.3,0,11.5S0.7,10,1.5,10z">
+                                                    </path>
+                                                </svg>
+                                            </button>
+                                            <ul class="dropdown-menu dropdown-menu-end"
+                                                aria-labelledby="widget-context-menu-1" >
+                                                <li><a class="dropdown-item" href="#">View</a></li>
+                                                <li>
+                                                    <hr class="dropdown-divider">
+                                                </li>
+                                                <li><a class="dropdown-item text-danger" href="#">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <!-- customer 4 -->
+                                <tr>
+                                    <td>#00748</td>
+                                    <td>
+                                        <div class="table-column">
+                                            <img class="customer-img" src="../../assets/images/Customer/customer2.jpg" alt="">
+                                            <p class="m-0">Haan Rby</p>
+                                        </div>
+                                      
+                                    </td>
+                                    <td>November 2, 2022</td>
+                                    <td> Lao</td>
+                                    <td>$7,600,000.00</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button type="button" class="btn btn-sm btn-muted d-block"
+                                                id="widget-context-menu-1" data-bs-toggle="dropdown" aria-expanded="false"
+                                                aria-label="More"><svg xmlns="http://www.w3.org/2000/svg" width="3"
+                                                    height="13" fill="currentColor">
+                                                    <path
+                                                        d="M1.5,8C0.7,8,0,7.3,0,6.5S0.7,5,1.5,5S3,5.7,3,6.5S2.3,8,1.5,8z M1.5,3C0.7,3,0,2.3,0,1.5S0.7,0,1.5,0 S3,0.7,3,1.5S2.3,3,1.5,3z M1.5,10C2.3,10,3,10.7,3,11.5S2.3,13,1.5,13S0,12.3,0,11.5S0.7,10,1.5,10z">
+                                                    </path>
+                                                </svg>
+                                            </button>
+                                            <ul class="dropdown-menu dropdown-menu-end"
+                                                aria-labelledby="widget-context-menu-1" >
+                                                <li><a class="dropdown-item" href="#">View</a></li>
+                                                <li>
+                                                    <hr class="dropdown-divider">
+                                                </li>
+                                                <li><a class="dropdown-item text-danger" href="#">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <!-- customer 5 -->
+                                <tr>
+                                    <td>#00749</td>
+                                    <td>
+                                        <div class="table-column">
+                                            <img class="customer-img" src="../../assets/images/Customer/customer3.jpg" alt="">
+                                            <p class="m-0">Donal Bean</p>
+                                        </div>
+                                      
+                                    </td>
+                                    <td>October 13, 2022</td>
+                                    <td> USA</td>
+                                    <td>$800,000.00</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button type="button" class="btn btn-sm btn-muted d-block"
+                                                id="widget-context-menu-1" data-bs-toggle="dropdown" aria-expanded="false"
+                                                aria-label="More"><svg xmlns="http://www.w3.org/2000/svg" width="3"
+                                                    height="13" fill="currentColor">
+                                                    <path
+                                                        d="M1.5,8C0.7,8,0,7.3,0,6.5S0.7,5,1.5,5S3,5.7,3,6.5S2.3,8,1.5,8z M1.5,3C0.7,3,0,2.3,0,1.5S0.7,0,1.5,0 S3,0.7,3,1.5S2.3,3,1.5,3z M1.5,10C2.3,10,3,10.7,3,11.5S2.3,13,1.5,13S0,12.3,0,11.5S0.7,10,1.5,10z">
+                                                    </path>
+                                                </svg>
+                                            </button>
+                                            <ul class="dropdown-menu dropdown-menu-end"
+                                                aria-labelledby="widget-context-menu-1" >
+                                                <li><a class="dropdown-item" href="#">View</a></li>
+                                                <li>
+                                                    <hr class="dropdown-divider">
+                                                </li>
+                                                <li><a class="dropdown-item text-danger" href="#">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <!-- customer 6 -->
+                                <tr>
+                                    <td>#00750</td>
+                                    <td>
+                                        <div class="table-column">
+                                            <img class="customer-img" src="../../assets/images/Customer/customer4.jpg" alt="">
+                                            <p class="m-0">	Elon Mesk</p>
+                                        </div>
+                                      
+                                    </td>
+                                    <td>September 1, 2022</td>
+                                    <td> China</td>
+                                    <td>$10,700,000.00</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button type="button" class="btn btn-sm btn-muted d-block"
+                                                id="widget-context-menu-1" data-bs-toggle="dropdown" aria-expanded="false"
+                                                aria-label="More"><svg xmlns="http://www.w3.org/2000/svg" width="3"
+                                                    height="13" fill="currentColor">
+                                                    <path
+                                                        d="M1.5,8C0.7,8,0,7.3,0,6.5S0.7,5,1.5,5S3,5.7,3,6.5S2.3,8,1.5,8z M1.5,3C0.7,3,0,2.3,0,1.5S0.7,0,1.5,0 S3,0.7,3,1.5S2.3,3,1.5,3z M1.5,10C2.3,10,3,10.7,3,11.5S2.3,13,1.5,13S0,12.3,0,11.5S0.7,10,1.5,10z">
+                                                    </path>
+                                                </svg>
+                                            </button>
+                                            <ul class="dropdown-menu dropdown-menu-end"
+                                                aria-labelledby="widget-context-menu-1" >
+                                                <li><a class="dropdown-item" href="#">View</a></li>
+                                                <li>
+                                                    <hr class="dropdown-divider">
+                                                </li>
+                                                <li><a class="dropdown-item text-danger" href="#">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <!-- customer 7 -->
+                                <tr>
+                                    <td>#00751</td>
+                                    <td>
+                                        <div class="table-column">
+                                            <img class="customer-img" src="../../assets/images/Customer/customer5.jpg" alt="">
+                                            <p class="m-0">Peter Pan</p>
+                                        </div>
+                                      
+                                    </td>
+                                    <td>October 14, 2022</td>
+                                    <td>England</td>
+                                    <td>$90,000.00</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button type="button" class="btn btn-sm btn-muted d-block"
+                                                id="widget-context-menu-1" data-bs-toggle="dropdown" aria-expanded="false"
+                                                aria-label="More"><svg xmlns="http://www.w3.org/2000/svg" width="3"
+                                                    height="13" fill="currentColor">
+                                                    <path
+                                                        d="M1.5,8C0.7,8,0,7.3,0,6.5S0.7,5,1.5,5S3,5.7,3,6.5S2.3,8,1.5,8z M1.5,3C0.7,3,0,2.3,0,1.5S0.7,0,1.5,0 S3,0.7,3,1.5S2.3,3,1.5,3z M1.5,10C2.3,10,3,10.7,3,11.5S2.3,13,1.5,13S0,12.3,0,11.5S0.7,10,1.5,10z">
+                                                    </path>
+                                                </svg>
+                                            </button>
+                                            <ul class="dropdown-menu dropdown-menu-end"
+                                                aria-labelledby="widget-context-menu-1" >
+                                                <li><a class="dropdown-item" href="#">View</a></li>
+                                                <li>
+                                                    <hr class="dropdown-divider">
+                                                </li>
+                                                <li><a class="dropdown-item text-danger" href="#">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <!-- customer 8 -->
+                                <tr>
+                                    <td>#00752 </td>
+                                    <td>
+                                        <div class="table-column">
+                                            <img class="customer-img" src="../../assets/images/Customer/customer6.jpg" alt="">
+                                            <p class="m-0">Jonh Wick</p>
+                                        </div>
+                                      
+                                    </td>
+                                    <td>December 19, 2022</td>
+                                    <td>Cambodia</td>
+                                    <td>$8,000,000.00</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button type="button" class="btn btn-sm btn-muted d-block"
+                                                id="widget-context-menu-1" data-bs-toggle="dropdown" aria-expanded="false"
+                                                aria-label="More"><svg xmlns="http://www.w3.org/2000/svg" width="3"
+                                                    height="13" fill="currentColor">
+                                                    <path
+                                                        d="M1.5,8C0.7,8,0,7.3,0,6.5S0.7,5,1.5,5S3,5.7,3,6.5S2.3,8,1.5,8z M1.5,3C0.7,3,0,2.3,0,1.5S0.7,0,1.5,0 S3,0.7,3,1.5S2.3,3,1.5,3z M1.5,10C2.3,10,3,10.7,3,11.5S2.3,13,1.5,13S0,12.3,0,11.5S0.7,10,1.5,10z">
+                                                    </path>
+                                                </svg>
+                                            </button>
+                                            <ul class="dropdown-menu dropdown-menu-end"
+                                                aria-labelledby="widget-context-menu-1" >
+                                                <li><a class="dropdown-item" href="#">View</a></li>
+                                                <li>
+                                                    <hr class="dropdown-divider">
+                                                </li>
+                                                <li><a class="dropdown-item text-danger" href="#">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <!-- customer 9 -->
+                                <tr>
+                                    <td>#00753</td>
+                                    <td>
+                                        <div class="table-column">
+                                            <img class="customer-img" src="../../assets/images/Customer/customer8.jpg" alt="">
+                                            <p class="m-0">	Pill Buck</p>
+                                        </div>
+                                      
+                                    </td>
+                                    <td>January 1, 2023</td>
+                                    <td>China</td>
+                                    <td>$9,200,000.00</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button type="button" class="btn btn-sm btn-muted d-block"
+                                                id="widget-context-menu-1" data-bs-toggle="dropdown" aria-expanded="false"
+                                                aria-label="More"><svg xmlns="http://www.w3.org/2000/svg" width="3"
+                                                    height="13" fill="currentColor">
+                                                    <path
+                                                        d="M1.5,8C0.7,8,0,7.3,0,6.5S0.7,5,1.5,5S3,5.7,3,6.5S2.3,8,1.5,8z M1.5,3C0.7,3,0,2.3,0,1.5S0.7,0,1.5,0 S3,0.7,3,1.5S2.3,3,1.5,3z M1.5,10C2.3,10,3,10.7,3,11.5S2.3,13,1.5,13S0,12.3,0,11.5S0.7,10,1.5,10z">
+                                                    </path>
+                                                </svg>
+                                            </button>
+                                            <ul class="dropdown-menu dropdown-menu-end"
+                                                aria-labelledby="widget-context-menu-1" >
+                                                <li><a class="dropdown-item" href="#">View</a></li>
+                                                <li>
+                                                    <hr class="dropdown-divider">
+                                                </li>
+                                                <li><a class="dropdown-item text-danger" href="#">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <!-- customer 10 -->
+                                <tr>
+                                    <td>#00754</td>
+                                    <td>
+                                        <div class="table-column">
+                                            <img class="customer-img" src="../../assets/images/Customer/customer10.jpg" alt="">
+                                            <p class="m-0">Rick Man</p>
+                                        </div>
+                                      
+                                    </td>
+                                    <td>January 4, 2023</td>
+                                    <td> Viet Nam</td>
+                                    <td>$9,000,000.00</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button type="button" class="btn btn-sm btn-muted d-block"
+                                                id="widget-context-menu-1" data-bs-toggle="dropdown" aria-expanded="false"
+                                                aria-label="More"><svg xmlns="http://www.w3.org/2000/svg" width="3"
+                                                    height="13" fill="currentColor">
+                                                    <path
+                                                        d="M1.5,8C0.7,8,0,7.3,0,6.5S0.7,5,1.5,5S3,5.7,3,6.5S2.3,8,1.5,8z M1.5,3C0.7,3,0,2.3,0,1.5S0.7,0,1.5,0 S3,0.7,3,1.5S2.3,3,1.5,3z M1.5,10C2.3,10,3,10.7,3,11.5S2.3,13,1.5,13S0,12.3,0,11.5S0.7,10,1.5,10z">
+                                                    </path>
+                                                </svg>
+                                            </button>
+                                            <ul class="dropdown-menu dropdown-menu-end"
+                                                aria-labelledby="widget-context-menu-1" >
+                                                <li><a class="dropdown-item" href="#">View</a></li>
+                                                <li>
+                                                    <hr class="dropdown-divider">
+                                                </li>
+                                                <li><a class="dropdown-item text-danger" href="#">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                 <!-- customer 11 -->
+                                 <tr>
+                                    <td>#00755</td>
+                                    <td>
+                                        <div class="table-column">
+                                            <img class="customer-img" src="../../assets/images/Customer/customer11.jpg" alt="">
+                                            <p class="m-0">Rich Women</p>
+                                        </div>
+                                      
+                                    </td>
+                                    <td>January 4, 2023</td>
+                                    <td> Viet Nam</td>
+                                    <td>$10,000,000.00</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button type="button" class="btn btn-sm btn-muted d-block"
+                                                id="widget-context-menu-1" data-bs-toggle="dropdown" aria-expanded="false"
+                                                aria-label="More"><svg xmlns="http://www.w3.org/2000/svg" width="3"
+                                                    height="13" fill="currentColor">
+                                                    <path
+                                                        d="M1.5,8C0.7,8,0,7.3,0,6.5S0.7,5,1.5,5S3,5.7,3,6.5S2.3,8,1.5,8z M1.5,3C0.7,3,0,2.3,0,1.5S0.7,0,1.5,0 S3,0.7,3,1.5S2.3,3,1.5,3z M1.5,10C2.3,10,3,10.7,3,11.5S2.3,13,1.5,13S0,12.3,0,11.5S0.7,10,1.5,10z">
+                                                    </path>
+                                                </svg>
+                                            </button>
+                                            <ul class="dropdown-menu dropdown-menu-end"
+                                                aria-labelledby="widget-context-menu-1" >
+                                                <li><a class="dropdown-item" href="#">View</a></li>
+                                                <li>
+                                                    <hr class="dropdown-divider">
+                                                </li>
+                                                <li><a class="dropdown-item text-danger" href="#">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                 <!-- customer 12 -->
+                                 <tr>
+                                    <td>#00756</td>
+                                    <td>
+                                        <div class="table-column">
+                                            <img class="customer-img" src="../../assets/images/Customer/customer12.jpg" alt="">
+                                            <p class="m-0">Peter King</p>
+                                        </div>
+                                      
+                                    </td>
+                                    <td>January 10, 2023</td>
+                                    <td> Argentina</td>
+                                    <td>$22,000,000.00</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button type="button" class="btn btn-sm btn-muted d-block"
+                                                id="widget-context-menu-1" data-bs-toggle="dropdown" aria-expanded="false"
+                                                aria-label="More"><svg xmlns="http://www.w3.org/2000/svg" width="3"
+                                                    height="13" fill="currentColor">
+                                                    <path
+                                                        d="M1.5,8C0.7,8,0,7.3,0,6.5S0.7,5,1.5,5S3,5.7,3,6.5S2.3,8,1.5,8z M1.5,3C0.7,3,0,2.3,0,1.5S0.7,0,1.5,0 S3,0.7,3,1.5S2.3,3,1.5,3z M1.5,10C2.3,10,3,10.7,3,11.5S2.3,13,1.5,13S0,12.3,0,11.5S0.7,10,1.5,10z">
+                                                    </path>
+                                                </svg>
+                                            </button>
+                                            <ul class="dropdown-menu dropdown-menu-end"
+                                                aria-labelledby="widget-context-menu-1" >
+                                                <li><a class="dropdown-item" href="#">View</a></li>
+                                                <li>
+                                                    <hr class="dropdown-divider">
+                                                </li>
+                                                <li><a class="dropdown-item text-danger" href="#">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <!-- customer 13 -->
+                                <tr>
+                                    <td>#00757</td>
+                                    <td>
+                                        <div class="table-column">
+                                            <img class="customer-img" src="../../assets/images/Customer/LionelMessi.jpg" alt="">
+                                            <p class="m-0">Lionel Messi</p>
+                                        </div>
+                                      
+                                    </td>
+                                    <td>January 19, 2023</td>
+                                    <td> Argentina</td>
+                                    <td>$18,700,000.00</td>
+                                    <td>
+                                        <div class="dropdown">
+                                            <button type="button" class="btn btn-sm btn-muted d-block"
+                                                id="widget-context-menu-1" data-bs-toggle="dropdown" aria-expanded="false"
+                                                aria-label="More"><svg xmlns="http://www.w3.org/2000/svg" width="3"
+                                                    height="13" fill="currentColor">
+                                                    <path
+                                                        d="M1.5,8C0.7,8,0,7.3,0,6.5S0.7,5,1.5,5S3,5.7,3,6.5S2.3,8,1.5,8z M1.5,3C0.7,3,0,2.3,0,1.5S0.7,0,1.5,0 S3,0.7,3,1.5S2.3,3,1.5,3z M1.5,10C2.3,10,3,10.7,3,11.5S2.3,13,1.5,13S0,12.3,0,11.5S0.7,10,1.5,10z">
+                                                    </path>
+                                                </svg>
+                                            </button>
+                                            <ul class="dropdown-menu dropdown-menu-end"
+                                                aria-labelledby="widget-context-menu-1" >
+                                                <li><a class="dropdown-item" href="#">View</a></li>
+                                                <li>
+                                                    <hr class="dropdown-divider">
+                                                </li>
+                                                <li><a class="dropdown-item text-danger" href="#">Delete</a></li>
+                                            </ul>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <my-footer></my-footer>
+    </section>
+    <!-- js for sort table -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.1/js/dataTables.bootstrap5.min.js"></script>
+    <!-- js for bootstrap 5 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- js for side bar -->
+    <script src="../js/general-template.js"></script>
+    <!-- js for this page -->
+    <script src="../js//customers-List.js"></script>
+</body>
+
+</html>

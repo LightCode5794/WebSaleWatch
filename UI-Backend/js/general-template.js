@@ -51,7 +51,7 @@ class MySidebar extends HTMLElement {
                         </a>
                         <div class="collapse nav-item__sub-menu" id="customer-collapse">
                             <ul class="sub-btn-nav list-unstyled fw-normal">
-                                <li><a href="#" class="sub-btn-nav__item nav-link link-dark rounded">Customers List</a>
+                                <li><a href="customersList.html" class="sub-btn-nav__item nav-link link-dark rounded">Customers List</a>
                                 </li>
                                 <li><a href="#" class="sub-btn-nav__item nav-link link-dark rounded">Customer</a></li>
                             </ul>
@@ -74,7 +74,7 @@ class MySidebar extends HTMLElement {
                             </ul>
                         </div>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="btn sub-btn nav-link link-dark align-items-center rounded collapsed text-start d-flex justify-content-between"
                             data-bs-toggle="collapse" data-bs-target="#staff-collapse" aria-expanded="false">
                             <div class="d-flex align-items-center">
@@ -89,7 +89,7 @@ class MySidebar extends HTMLElement {
                                 </li>
                                 <li><a href="#" class="sub-btn-nav__item nav-link link-dark rounded">Staff</a></li>
                             </ul>
-                        </div>
+                        </div> --!>
                     </li>
                 </ul>
                
@@ -150,7 +150,7 @@ class MyFooter extends HTMLElement {
             <div class="footer-container border-top d-flex justify-content-between align-items-center ">
 
                 <span class="copyright p-3 fw-light" style="font-size: 13px;">
-                    Copyright <i class="fa-regular fa-copyright"></i> Team 7 - Web Watch Clinic 2022
+                    Copyright <i class="fa-regular fa-copyright"></i> Team 7 - Web Watch Clinic 2023
                 </span>
 
                 <span class="author p-3 fw-light" style="font-size: 13px">
