@@ -8,6 +8,8 @@
     <!--css bootstrap5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- css for data table -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.1/css/dataTables.bootstrap5.min.css">
     <!-- custom css for this page -->
     <link rel="stylesheet" href="../css/oders-List.css">
     <link rel="stylesheet" href="../../assets/themify-icons/themify-icons.css">
@@ -28,7 +30,7 @@
         <section id="main-view">
             <div class="container">
                 <div class="row page-title">
-                    <div class="py-5">
+                    <div class="py-4">
                         <div class="row align-items-center">
                             <div class="col">
                                 <h1 class="h3 m-0">Oders</h1>
@@ -40,14 +42,14 @@
                     </div>
                 </div>
 
-                <div class="card">
-                    <div class="p-4">
+                <div class="card p-2">
+                    <!-- <div>
                         <input type="text" placeholder="Start typing to search for orders"
                             class="form-control form-control--search mx-auto" id="table-search">
-                    </div>
-                    <div class="widget-table ps-2 pe-2">
+                    </div> -->
+                    <div class="widget-table">
 
-                        <table class="table sortable table__recent_orders">
+                        <table id="orders-table" class="table order-list-tb ">
                             <thead class="text-primary">
                                 <tr>
                                     <!-- <th class="w-min sorting_disabled" data-orderable="false" rowspan="1" colspan="1"
@@ -165,18 +167,25 @@
                         </table>
                     </div>
                 </div>
+            </div>
 
         </section>
         <my-footer></my-footer>
     </section>
     <!-- js for sort table -->
-    <script src="https://www.kryogenix.org/code/browser/sorttable/sorttable.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.1/js/dataTables.bootstrap5.min.js"></script>
+    <!-- js for sort table -->
+    <!-- <script src="https://www.kryogenix.org/code/browser/sorttable/sorttable.js"></script> -->
     <!-- js for bootstrap 5 -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
     <!-- js for side bar -->
     <script src="../js/general-template.js"></script>
+    <!-- js for this page -->
+    <script src="../js/oders-List.js"></script>
 </body>
 
 </html>

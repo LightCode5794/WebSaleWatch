@@ -1,0 +1,10 @@
+td {
+    vertical-align: middle;
+}
+.table-column {
+    display: flex;
+    align-items: center;    
+}
+.product-img {
+    width: 50px;
+}

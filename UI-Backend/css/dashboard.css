@@ -68,22 +68,3 @@
 }
 
 
-/* status oders */
-.badge-sa-success {
-    background: #def2d0;
-    color: #245900;
-}
-
-.badge-sa-primary {
-    background: #d9ecff;
-    color: #004b9a;
-}
-
-.badge-sa-warning {
-    background: #f9f1c8;
-    color: #5e4f00;
-}
-.badge-sa-danger {
-    background: #ffdcdc;
-    color: #900;
-}
