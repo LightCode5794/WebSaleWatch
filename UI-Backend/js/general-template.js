@@ -35,12 +35,20 @@ class MySidebar extends HTMLElement {
                             <ul class="sub-btn-nav list-unstyled fw-normal">
                                 <li><a href="productsList.html" class="sub-btn-nav__item nav-link link-dark rounded">Products List</a>
                                 </li>
-                                <li><a href="#" class="sub-btn-nav__item nav-link link-dark rounded">Categories list</a>
+                                <li><a href="categoriesList.html" class="sub-btn-nav__item nav-link link-dark rounded">Categories list</a>
                                 </li>
                             </ul>
                         </div>
                     </li>
                     <li class="nav-item">
+                    <a href="customersList.html" class="nav-link link-dark  d-flex align-items-center" aria-current="page">
+
+                    <i class="nav-link__icon ti-user"></i>
+                        <span class="nav-link__title">Customerss List</span>
+                    </a>
+                  </li>
+
+                  <!--  <li class="nav-item">
                         <a class="btn sub-btn nav-link link-dark align-items-center rounded collapsed text-start d-flex justify-content-between"
                             data-bs-toggle="collapse" data-bs-target="#customer-collapse" aria-expanded="false">
                             <div class="d-flex align-items-center">
@@ -56,8 +64,15 @@ class MySidebar extends HTMLElement {
                                 <li><a href="#" class="sub-btn-nav__item nav-link link-dark rounded">Customer</a></li>
                             </ul>
                         </div>
-                    </li>
+                    </li> --!>
+
                     <li class="nav-item">
+                    <a href="odersList.html" class="nav-link link-dark  d-flex align-items-center" aria-current="page">
+                    <i class="nav-link__icon ti-shopping-cart-full"></i>
+                        <span class="nav-link__title">Customerss List</span>
+                    </a>
+                  </li>
+                  <!--  <li class="nav-item">
                         <a class="btn sub-btn nav-link link-dark align-items-center rounded collapsed text-start d-flex justify-content-between"
                             data-bs-toggle="collapse" data-bs-target="#oder-collapse" aria-expanded="false">
                             <div class="d-flex align-items-center">
@@ -73,7 +88,8 @@ class MySidebar extends HTMLElement {
                                 <li><a href="#" class="sub-btn-nav__item nav-link link-dark rounded">Order</a></li>
                             </ul>
                         </div>
-                    </li>
+                    </li>--!>
+
                     <!-- <li class="nav-item">
                         <a class="btn sub-btn nav-link link-dark align-items-center rounded collapsed text-start d-flex justify-content-between"
                             data-bs-toggle="collapse" data-bs-target="#staff-collapse" aria-expanded="false">
