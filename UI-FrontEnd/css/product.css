@@ -130,3 +130,70 @@ input[type=number] {
     display: inline;
     font-size: 28px;
 }
+
+/* css for review */
+.reviews-inner {
+    max-width: 820px;
+    margin: 0 auto;
+    padding-top: 0px;
+}
+
+.review-title {
+    display: flex;
+    font-size: 24px;
+    justify-content: center;
+    padding: 24px 0;
+}
+.review-title h4 {
+    width: fit-content;
+    margin: 0 0 0 4px;
+    padding: 0;
+    border-bottom: 2px solid rgba(0, 0, 0, .1);
+}
+
+.commentlist {
+    list-style: none;
+    margin: 0;
+    display: block;
+    padding: 0;
+}
+.commentlist>li {
+    margin: 0;
+    position: relative;
+}
+.commentlist>li .avatar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 48px;
+    height: 48px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.commentlist .comment-body, 
+.commentlist .comment-text {
+    margin: 0 0 28px 62px;
+    padding-bottom: 28px;
+    border-bottom: 1px solid #e2e2e2;
+}
+.star-rating {
+    float: right;
+}
+
+.commentlist li .comment-text .meta {
+    margin: 0 0 15px;
+    padding-right: 110px;
+}
+.btn-review-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.btn-review-container .btn-review {
+    border-radius: 0px;
+    padding: 12px 28px;
+    min-width: 240px;
+    border-width: 2px;
+}
