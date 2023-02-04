@@ -48,6 +48,7 @@
 
 .btn-close-sidebar {
   display: none;
+  margin-left: 90%;
 }
 
 @media (max-width: 992px) {

@@ -5,17 +5,18 @@ class MySidebar extends HTMLElement {
         <section id="sidebar">
         <div>
             <div id="sidebar-container" class=" sidebar-container d-flex p-3 flex-column flex-shrink-0  bg-light">
+            <button class="btn btn-close btn-close-sidebar"></button>
+
                 <div
-                    class="sidebar-logo d-flex align-items-center text-decoration-none justify-content-between border-bottom">
+                    class="sidebar-logo d-flex align-items-center text-decoration-none justify-content-between border-bottom m-2">
 
-                    LOGO
-                    <button class="btn btn-close btn-close-sidebar"></button>
-
+                    <img src="../../assets/images/logo/LogoShopWatch.png" alt="" width="100%">
+                  
                 </div>
 
                 <ul class="nav nav-pills flex-column mb-auto">
                     <li class="nav-item">
-                        <a href="dashboard.html" class="nav-link link-dark active d-flex align-items-center" aria-current="page">
+                        <a href="dashboard.html" class="nav-link link-dark d-flex align-items-center" aria-current="page">
 
                             <i class="nav-link__icon ti-dashboard"></i>
                             <span class="nav-link__title">Dashboard</span>
@@ -148,7 +149,7 @@ class MyHeader extends HTMLElement {
                 <button class="btn-search">
                     <i class="ti-search" id="icon_search"></i>
                 </button>
-                <input type="search" class="search-field" placeholder="Search blogs…" value="" name=""
+                <input type="search" class="search-field" placeholder="Search content…" value="" name=""
                     autocomplete="off">
             </div>
             <div class="header__permission">Admin</div>

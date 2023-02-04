@@ -85,10 +85,10 @@ class MyHeader extends HTMLElement {
         
                                 <a href="#">My Account <i class="arrow-down-icon fa-solid fa-caret-down"></i></a>
                                 <ul class="sub-menu-top-bar">
-                                    <li><a href="my-account.html">My Account </a> </li>
+                                    <li><a href="#">My Account </a> </li>
                                     <li><a href="login.html">Login</a></li>
-                                    <li><a href="register.html">Register</a></li>
-                                    <li><a href="checkout.html">Checkout</a></li>
+                                    <li><a href="login.html">Register</a></li>
+                                    <li><a href="#">Checkout</a></li>
                                 </ul>
                             </div>
                             <!-- languages -->
@@ -97,7 +97,7 @@ class MyHeader extends HTMLElement {
                                 <a href="#">English <i class="arrow-down-icon fa-solid fa-caret-down"></i></i></a>
                                 <ul class="sub-menu-top-bar">
                                     <li><a href="#">Tiếng Việt</a> </li>
-                                    <li><a href="#">Tiếng Trung</a></li>
+                                    <li><a href="#">English</a></li>
                                 </ul>
                             </div>
         

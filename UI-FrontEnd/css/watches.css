@@ -267,9 +267,18 @@
 }
 
 .product-box .product-name {
+    color: #000000;
+    text-align: center;
+}
+.product-box .product-price {
     font-size: 16px;
     color: #999;
+    display: flex;
+    align-items: center;
+    margin-top: 4px;
+    gap: 16px;
 }
+
 
 .box-caption {
     color: #666666;

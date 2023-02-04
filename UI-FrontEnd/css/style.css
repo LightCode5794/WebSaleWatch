@@ -383,8 +383,7 @@ img {
     text-align: center;
 }
 
-.carousel-cell .box-caption a,
-.carousel-cell .box-caption p {
+.carousel-cell .box-caption a {
     text-decoration: none;
     color: #000000;
     font-family: var(--font-web);
@@ -392,6 +391,8 @@ img {
 }
 .box-caption .product-price {
     display: flex;
+    font-size: 16px;
+    color: #999;
     align-items: center;
     margin-top: 4px;
     gap: 16px;
