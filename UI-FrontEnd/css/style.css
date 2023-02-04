@@ -10,6 +10,10 @@
 /* content home */
 
 /* slider */
+#slider {
+    position: relative;
+    
+}
 .mySlides {
     display: none;
     padding-top: 50%;
@@ -17,6 +21,31 @@
     background-repeat: no-repeat;
     /* margin-bottom: 60px; */
 }
+.btn-shop {
+    position: absolute;
+    z-index: 1000;
+    background-color: #000000;
+    bottom: 25px;
+    right: 48px;
+    width: 150px;
+    height: 50px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.4s;
+}
+.btn-shop a {
+    color: #ffffff;
+    font-size: 18px;
+    width: 100%;
+    text-align: center;
+}
+.btn-shop:hover {
+    background-color: var(--color-text-hover);
+}
+
 
 img {
     vertical-align: middle;
@@ -298,6 +327,7 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 16px;
 }
 
 .content-title h2 {
@@ -349,7 +379,7 @@ img {
    
 }
 
-.carousel-cell .box-caption {
+.carousel-cell .box-caption .product-name {
     text-align: center;
 }
 
@@ -359,6 +389,12 @@ img {
     color: #000000;
     font-family: var(--font-web);
 
+}
+.box-caption .product-price {
+    display: flex;
+    align-items: center;
+    margin-top: 4px;
+    gap: 16px;
 }
 
 /* responsive carousel */

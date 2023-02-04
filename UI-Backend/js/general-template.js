@@ -131,6 +131,7 @@ class MySidebar extends HTMLElement {
    `
     }
 }
+
 customElements.define('my-sidebar', MySidebar);
 
 //create header

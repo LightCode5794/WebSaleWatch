@@ -583,3 +583,17 @@
      background-color: #111111;
      line-height: 1.6;
  }
+
+ /* css star rating */
+ .star-rating {
+    background-color: inherit;
+    float: right;
+   margin-bottom: 4px;
+  
+ }
+ .star{
+    border:none;
+    background-color: unset;
+    color:#000000;
+    font-size: 1.2rem;
+  }

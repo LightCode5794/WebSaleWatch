@@ -229,6 +229,23 @@ class MyFooter extends HTMLElement {
 }
 customElements.define('my-footer', MyFooter);
 
+// rating star
+
+class MyRatingStar extends HTMLElement {
+    connectedCallback() {
+        this.innerHTML = `
+        <div class="star-rating">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+        </div>
+      `
+    }
+}
+
+customElements.define('my-rating', MyRatingStar);
 
 // event for sidebar
 let menuBtn = document.querySelector(".icon-hamburger");
@@ -284,30 +301,30 @@ for (var i = 0; i < document.links.length; i++) {
     if (document.links[i].className != "logo" && document.links[i].href === document.URL) {
         current = i;
         break;
-        
+
     }
 }
 document.links[current].className += " actived-page";
 
 
 // // make header sticky when scroll
-window.onscroll = function() {myFunction()};
+window.onscroll = function () { myFunction() };
 
 var header = document.getElementById("myHeader");
 var headerTop = document.getElementById("topBar");
 //var sticky = header.offsetTop;
 
 function myFunction() {
-  if (window.pageYOffset > 40) {
-    header.classList.add("sticky");
-    if(window.getComputedStyle(headerTop).display == "none"){
-        header.style.top = '0';
+    if (window.pageYOffset > 40) {
+        header.classList.add("sticky");
+        if (window.getComputedStyle(headerTop).display == "none") {
+            header.style.top = '0';
+        }
+
+
+    } else {
+        header.classList.remove("sticky");
     }
-   
-    
-  } else {
-    header.classList.remove("sticky");
-  }
-  
-  
+
+
 }
