@@ -36,7 +36,7 @@ class MySidebar extends HTMLElement {
                             <ul class="sub-btn-nav list-unstyled fw-normal">
                                 <li><a href="productsList.html" class="sub-btn-nav__item nav-link link-dark rounded">Products List</a>
                                 </li>
-                                <li><a href="categoriesList.html" class="sub-btn-nav__item nav-link link-dark rounded">Categories list</a>
+                                <li><a href="categoriesList.html" class="sub-btn-nav__item nav-link link-dark rounded">Categories List</a>
                                 </li>
                             </ul>
                         </div>
@@ -70,7 +70,7 @@ class MySidebar extends HTMLElement {
                     <li class="nav-item">
                     <a href="odersList.html" class="nav-link link-dark  d-flex align-items-center" aria-current="page">
                     <i class="nav-link__icon ti-shopping-cart-full"></i>
-                        <span class="nav-link__title">Customerss List</span>
+                        <span class="nav-link__title">Orders List</span>
                     </a>
                   </li>
                   <!--  <li class="nav-item">
