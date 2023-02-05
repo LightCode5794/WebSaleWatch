@@ -28,7 +28,7 @@ class MySidebar extends HTMLElement {
                 <div class="menu-divider"></div>
                 <div class="account-menu hover-underline-animation">
 
-                    <a href="#" class="">Login</a>
+                    <a href="login.html" class="">Login</a>
                     <i class="ti-user"></i>
 
                 </div>
