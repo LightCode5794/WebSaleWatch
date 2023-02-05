@@ -17,11 +17,11 @@ class MySidebar extends HTMLElement {
                     <input type="search" class="search-field" placeholder="Search watches…" value="" name=""
                         autocomplete="off">
                 </div>
-                <a href="#" class="bar-item bar-button hover-underline-animation">Home</a>
-                <a href="#" class="bar-item bar-button hover-underline-animation">Watches</a>
-                <a href="#" class="bar-item bar-button hover-underline-animation">About</a>
-                <a href="#" class="bar-item bar-button hover-underline-animation">Blog</a>
-                <a href="#" class="bar-item bar-button hover-underline-animation">Contact</a>
+                <a href="index.html" class="bar-item bar-button hover-underline-animation">Home</a>
+                <a href="watches.html" class="bar-item bar-button hover-underline-animation">Watches</a>
+                <a href="about.html" class="bar-item bar-button hover-underline-animation">About</a>
+                <a href="blog.html" class="bar-item bar-button hover-underline-animation">Blog</a>
+                <a href="contact.html" class="bar-item bar-button hover-underline-animation">Contact</a>
             </div>
 
             <div class="bottom-extras">
