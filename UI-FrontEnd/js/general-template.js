@@ -298,13 +298,15 @@ iconSearch.addEventListener("click", () => iconSearch.classList.toggle("toggled"
 
 var current = 0;
 for (var i = 0; i < document.links.length; i++) {
+    
     if (document.links[i].className != "logo" && document.links[i].href === document.URL) {
         current = i;
-        break;
-
+        console.log(document.links[current].className + " actived-page");
+        document.links[i].className += " actived-page";
+       
     }
 }
-document.links[current].className += " actived-page";
+// document.links[current].className += " actived-page";
 
 
 // // make header sticky when scroll
